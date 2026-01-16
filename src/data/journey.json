@@ -1,0 +1,122 @@
+[
+  {
+    "number": 1,
+    "icon": "Heart",
+    "title": "Why Sin Was Permitted?...",
+    "titleSw": "Kwa nini dhambi Iliruhusiwa?...",
+    "subtitle": "The Foundation of Eternal Life",
+    "subtitleSw": "Msingi wa Uzima wa Milele",
+    "description": "God's character is the foundation of everything. To know Him is to understand His nature—a God of love, justice, mercy, and truth. His character is not arbitrary; it is eternal and unchanging.",
+    "descriptionSw": "Tabia ya Mungu ndiyo msingi wa kila kitu. Kumjua ni kuelewa asili yake—Mungu wa upendo, haki, rehema, na ukweli. Tabia yake si ya kiholela; ni ya milele na haibadiliki.",
+    "verse": "\"He who does not love does not know God, for God is love.\" — 1 John 4:8",
+    "topics": [
+      "The Nature of God",
+      "God is Love",
+      "God is Just",
+      "God is Merciful"
+    ],
+    "topicsSw": [
+      "Asili ya Mungu",
+      "Mungu ni Upendo",
+      "Mungu ni Haki",
+      "Mungu ni Rehema"
+    ],
+    "color": "gold"
+  },
+  {
+    "number": 2,
+    "icon": "Scale",
+    "title": "The Plan of Salvation",
+    "titleSw": "Mpango Wa Ukombozi",
+    "subtitle": "A Reflection of His Character",
+    "subtitleSw": "Onyesho la Tabia Yake",
+    "description": "God's law is not a set of arbitrary rules but a perfect reflection of His character. The law is founded on love—love for God and love for others. Understanding this transforms how we see obedience.",
+    "descriptionSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho kamili la tabia yake. Sheria imejengwa juu ya upendo—upendo kwa Mungu na upendo kwa wengine. Kuelewa hili kunabadilisha jinsi tunavyoona utii.",
+    "verse": "\"Love is the fulfillment of the law.\" — Romans 13:10",
+    "topics": [
+      "The Two Great Commandments",
+      "Law and Love",
+      "The Ten Commandments",
+      "Spirit of the Law"
+    ],
+    "topicsSw": [
+      "Amri Mbili Kuu",
+      "Sheria na Upendo",
+      "Amri Kumi",
+      "Roho ya Sheria"
+    ],
+    "color": "sage"
+  },
+  {
+    "number": 3,
+    "icon": "AlertCircle",
+    "title": "Three Angel's Message",
+    "titleSw": "Ujumbe Wa Malaika Watatu",
+    "subtitle": "A message for the last days",
+    "subtitleSw": "Ujumbe wa Siku za Mwisho",
+    "description": "Sin is the transgression of God's law—a departure from His character of love. It separates us from God, not because He rejects us, but because sin is inherently destructive to the soul.",
+    "descriptionSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Inatutengana na Mungu, si kwa sababu anatukataa, bali kwa sababu dhambi ni uharibifu kwa nafsi.",
+    "verse": "\"For the wages of sin is death, but the gift of God is eternal life.\" — Romans 6:23",
+    "topics": [
+      "The First Angel's Message",
+      "A Great Religious Revival",
+      "Opposition",
+      "Preparing to Meet the Lord"
+    ],
+    "topicsSw": [
+      "Dhambi ni Nini?",
+      "Asili ya Dhambi",
+      "Matokeo ya Dhambi",
+      "Haja ya Mwokozi"
+    ],
+    "color": "burgundy"
+  },
+  {
+    "number": 4,
+    "icon": "Cross",
+    "title": "Justice and Judgment",
+    "titleSw": "Haki Na Hukumu",
+    "subtitle": "Justice and Mercy United",
+    "subtitleSw": "Haki na Rehema Zimeungana",
+    "description": "In Jesus Christ, we see the perfect revelation of God's character. The cross demonstrates both God's justice (the law must be upheld) and His mercy (He provides the way of salvation).",
+    "descriptionSw": "Katika Yesu Kristo, tunaona ufunuo kamili wa tabia ya Mungu. Msalaba unaonyesha haki ya Mungu (sheria lazima iheshimiwe) na rehema yake (anatoa njia ya wokovu).",
+    "verse": "\"For God so loved the world that He gave His only begotten Son.\" — John 3:16",
+    "topics": [
+      "The Gospel",
+      "The Cross Explained",
+      "Justification by Faith",
+      "The New Covenant"
+    ],
+    "topicsSw": [
+      "Injili",
+      "Msalaba Umefafanuliwa",
+      "Kuhesabiwa Haki kwa Imani",
+      "Agano Jipya"
+    ],
+    "color": "gold"
+  },
+  {
+    "number": 5,
+    "icon": "Sun",
+    "title": "New Heaven and New Earth",
+    "titleSw": "Mbingu Mpya na Nchi Mpya",
+    "subtitle": "A Daily Relationship with God",
+    "subtitleSw": "Uhusiano wa Kila Siku na Mungu",
+    "description": "Eternal life is not just a future hope—it begins now. It is a daily, growing, transforming relationship with God through Christ. We are called to know Him more deeply each day.",
+    "descriptionSw": "Uzima wa milele si tumaini la baadaye tu—unaanza sasa. Ni uhusiano wa kila siku, unaokua, unaobadilisha na Mungu kupitia Kristo. Tunaitwa kumjua zaidi kila siku.",
+    "verse": "\"And this is eternal life, that they may know You, the only true God.\" — John 17:3",
+    "topics": [
+      "Sanctification",
+      "Walking with God",
+      "Spiritual Disciplines",
+      "The Blessed Hope"
+    ],
+    "topicsSw": [
+      "Utakaso",
+      "Kutembea na Mungu",
+      "Nidhamu za Kiroho",
+      "Tumaini Lenye Baraka"
+    ],
+    "color": "sage"
+  }
+]

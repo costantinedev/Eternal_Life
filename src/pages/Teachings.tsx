@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import teachings from '@/data/teachings.json';
 
 interface Teaching {
   id: string;
@@ -31,74 +32,7 @@ const Teachings: React.FC = () => {
     { id: 'eternal-life', label: language === 'en' ? 'Living Eternal Life' : 'Kuishi Uzima wa Milele', icon: Sun },
   ];
 
-  const teachings: Teaching[] = [
-    {
-      id: 'character-of-god',
-      title: 'The Character of God: Foundation of All Truth',
-      titleSw: 'Tabia ya Mungu: Msingi wa Ukweli Wote',
-      excerpt: 'Before we can understand sin, salvation, or eternal life, we must first understand who God is. His character is the foundation upon which all biblical truth rests.',
-      excerptSw: 'Kabla ya kuelewa dhambi, wokovu, au uzima wa milele, lazima kwanza tuelewa Mungu ni nani. Tabia yake ndiyo msingi ambao ukweli wote wa Biblia unajengwa.',
-      category: 'character',
-      categorySw: 'Tabia ya Mungu',
-      step: 1,
-      readTime: '12 min',
-    },
-    {
-      id: 'god-is-love',
-      title: 'God is Love: The Essence of His Being',
-      titleSw: 'Mungu ni Upendo: Kiini cha Uwepo Wake',
-      excerpt: 'Love is not merely something God does—it is who He is. Understanding this truth transforms our relationship with Him.',
-      excerptSw: 'Upendo si jambo tu Mungu anafanya—ni yeye ni nani. Kuelewa ukweli huu kunabadilisha uhusiano wetu naye.',
-      category: 'character',
-      categorySw: 'Tabia ya Mungu',
-      step: 1,
-      readTime: '10 min',
-    },
-    {
-      id: 'law-of-love',
-      title: 'The Law of Love: Understanding God\'s Commandments',
-      titleSw: 'Sheria ya Upendo: Kuelewa Amri za Mungu',
-      excerpt: 'God\'s law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.',
-      excerptSw: 'Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.',
-      category: 'law',
-      categorySw: 'Sheria ya Mungu',
-      step: 2,
-      readTime: '15 min',
-    },
-    {
-      id: 'what-is-sin',
-      title: 'What is Sin? Understanding Our Separation from God',
-      titleSw: 'Dhambi ni Nini? Kuelewa Kutengana Kwetu na Mungu',
-      excerpt: 'Sin is the transgression of God\'s law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.',
-      excerptSw: 'Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.',
-      category: 'sin',
-      categorySw: 'Kuelewa Dhambi',
-      step: 3,
-      readTime: '14 min',
-    },
-    {
-      id: 'the-cross-explained',
-      title: 'The Cross: Where Justice and Mercy Meet',
-      titleSw: 'Msalaba: Mahali Ambapo Haki na Rehema Zinakutana',
-      excerpt: 'At the cross, we see the fullest revelation of God\'s character—His justice that cannot overlook sin, and His mercy that provides salvation.',
-      excerptSw: 'Msalabani, tunaona ufunuo kamili wa tabia ya Mungu—haki yake isiyoweza kupuuza dhambi, na rehema yake inayotoa wokovu.',
-      category: 'redemption',
-      categorySw: 'Ukombozi katika Kristo',
-      step: 4,
-      readTime: '18 min',
-    },
-    {
-      id: 'walking-with-god',
-      title: 'Walking with God: Eternal Life Begins Now',
-      titleSw: 'Kutembea na Mungu: Uzima wa Milele Unaanza Sasa',
-      excerpt: 'Eternal life is not just a future hope but a present reality. It is knowing God daily, growing in His likeness, and experiencing His presence.',
-      excerptSw: 'Uzima wa milele si tumaini la baadaye tu bali ni ukweli wa sasa. Ni kumjua Mungu kila siku, kukua katika mfano wake, na kupitia uwepo wake.',
-      category: 'eternal-life',
-      categorySw: 'Kuishi Uzima wa Milele',
-      step: 5,
-      readTime: '16 min',
-    },
-  ];
+
 
   const filteredTeachings = selectedCategory === 'all'
     ? teachings
