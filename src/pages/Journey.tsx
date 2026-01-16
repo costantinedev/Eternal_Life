@@ -41,7 +41,7 @@ const Journey: React.FC = () => {
     {
       number: 3,
       icon: AlertCircle,
-      title: language === 'en' ? "Three Ange\'s Message" : "Ujumbe Wa Malaika Watatu",
+      title: language === 'en' ? "Three Angel\'s Message" : "Ujumbe Wa Malaika Watatu",
       subtitle: language === 'en' ? "Separation from God's Love" : "Kutengana na Upendo wa Mungu",
       description: language === 'en'
         ? "Sin is the transgression of God's law—a departure from His character of love. It separates us from God, not because He rejects us, but because sin is inherently destructive to the soul."
