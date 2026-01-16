@@ -38,16 +38,17 @@ const translations: Record<string, Record<Language, string>> = {
   },
   
   // Steps
-  'step1.title': { en: 'Know God\'s Character', sw: 'Jua Tabia ya Mungu' },
+  'step1.title': { en: 'Why Sin Was Permitted?...', sw: 'Kwa nini dhambi Iliruhusiwa?...' },
   'step1.desc': { en: 'Discover who God truly is through His revealed character', sw: 'Gundua Mungu ni nani kupitia tabia yake iliyofunuliwa' },
-  'step2.title': { en: 'Understand His Law', sw: 'Elewa Sheria Yake' },
+  'step2.title': { en: 'The Plan of Salvation', sw: 'Mpango Wa Ukombozi' },
   'step2.desc': { en: 'God\'s law reveals His character and is founded on love', sw: 'Sheria ya Mungu inafunua tabia yake na imejengwa juu ya upendo' },
-  'step3.title': { en: 'Recognize Sin', sw: 'Tambua Dhambi' },
-  'step3.desc': { en: 'Sin is the transgression of God\'s law—separation from His love', sw: 'Dhambi ni kuvunja sheria ya Mungu—kutengana na upendo wake' },
-  'step4.title': { en: 'Accept Christ', sw: 'Mpokee Kristo' },
+  'step3.title': { en: 'Three Ange\'s Message', sw: 'Ujumbe Wa Malaika Watatu' },
+  'step3.desc': { en: 'Through Jesus, we see both God\'s justice and mercy united', sw: 'Kupitia Yesu, tunaona haki na rehema ya Mungu zimeungana' },
+  'step4.title': { en: 'Justice and Judgment', sw: 'Haki Na Hukumu' },
   'step4.desc': { en: 'Through Jesus, we see both God\'s justice and mercy united', sw: 'Kupitia Yesu, tunaona haki na rehema ya Mungu zimeungana' },
-  'step5.title': { en: 'Live Eternal Life', sw: 'Ishi Uzima wa Milele' },
+  'step5.title': { en: 'A New Heaven and New Earth', sw: 'Mbingu Mpya na Nchi Mpya' },
   'step5.desc': { en: 'Eternal life begins now in daily relationship with God', sw: 'Uzima wa milele unaanza sasa katika uhusiano wa kila siku na Mungu' },
+  
 
   // Featured Teaching
   'featured.label': { en: 'Featured Teaching', sw: 'Fundisho Maalum' },

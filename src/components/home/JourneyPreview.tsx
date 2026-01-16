@@ -45,6 +45,7 @@ const JourneyPreview: React.FC = () => {
       descKey: 'step5.desc',
       number: 5,
     },
+    
   ];
 
   return (

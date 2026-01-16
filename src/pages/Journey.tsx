@@ -13,7 +13,7 @@ const Journey: React.FC = () => {
     {
       number: 1,
       icon: Heart,
-      title: language === 'en' ? "Know God's Character" : "Jua Tabia ya Mungu",
+      title: language === 'en' ? "Why Sin Was Permitted?..." : "Kwa nini dhambi Iliruhusiwa?...",
       subtitle: language === 'en' ? "The Foundation of Eternal Life" : "Msingi wa Uzima wa Milele",
       description: language === 'en' 
         ? "God's character is the foundation of everything. To know Him is to understand His nature—a God of love, justice, mercy, and truth. His character is not arbitrary; it is eternal and unchanging."
@@ -27,7 +27,7 @@ const Journey: React.FC = () => {
     {
       number: 2,
       icon: Scale,
-      title: language === 'en' ? "Understand His Law" : "Elewa Sheria Yake",
+      title: language === 'en' ? "The Plan of Salvation" : "Mpango Wa Ukombozi",
       subtitle: language === 'en' ? "A Reflection of His Character" : "Onyesho la Tabia Yake",
       description: language === 'en'
         ? "God's law is not a set of arbitrary rules but a perfect reflection of His character. The law is founded on love—love for God and love for others. Understanding this transforms how we see obedience."
@@ -41,7 +41,7 @@ const Journey: React.FC = () => {
     {
       number: 3,
       icon: AlertCircle,
-      title: language === 'en' ? "Recognize Sin" : "Tambua Dhambi",
+      title: language === 'en' ? "Three Ange\'s Message" : "Ujumbe Wa Malaika Watatu",
       subtitle: language === 'en' ? "Separation from God's Love" : "Kutengana na Upendo wa Mungu",
       description: language === 'en'
         ? "Sin is the transgression of God's law—a departure from His character of love. It separates us from God, not because He rejects us, but because sin is inherently destructive to the soul."
@@ -55,7 +55,7 @@ const Journey: React.FC = () => {
     {
       number: 4,
       icon: Cross,
-      title: language === 'en' ? "Accept Christ" : "Mpokee Kristo",
+      title: language === 'en' ? "Justice and Judgment" : "Haki Na Hukumu'",
       subtitle: language === 'en' ? "Justice and Mercy United" : "Haki na Rehema Zimeungana",
       description: language === 'en'
         ? "In Jesus Christ, we see the perfect revelation of God's character. The cross demonstrates both God's justice (the law must be upheld) and His mercy (He provides the way of salvation)."
@@ -69,7 +69,7 @@ const Journey: React.FC = () => {
     {
       number: 5,
       icon: Sun,
-      title: language === 'en' ? "Live Eternal Life" : "Ishi Uzima wa Milele",
+      title: language === 'en' ? "New Heaven and New Earth" : "Mbingu Mpya na Nchi Mpya",
       subtitle: language === 'en' ? "A Daily Relationship with God" : "Uhusiano wa Kila Siku na Mungu",
       description: language === 'en'
         ? "Eternal life is not just a future hope—it begins now. It is a daily, growing, transforming relationship with God through Christ. We are called to know Him more deeply each day."
