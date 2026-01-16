@@ -15,6 +15,16 @@ const TeachingDetail: React.FC = () => {
   const teaching = teachings.find(t => t.id === id);
   const teachingDetail = teachingDetails.find(t => t.id === id);
 
+  const boldKeywords = (text: string) => {
+    const keywords = ['God', 'Christ', 'Jesus', 'Holy Spirit', 'Bible', 'Scripture', 'Three Angle\'s Message', 'Redemption', 'Eternal Life','Mungu','Roho'];
+    let boldedText = text;
+    keywords.forEach(keyword => {
+      const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+      boldedText = boldedText.replace(regex, `<strong>${keyword}</strong>`);
+    });
+    return boldedText;
+  };
+
   if (!teaching) {
     return (
       <div className="min-h-screen bg-background">
@@ -91,11 +101,9 @@ const TeachingDetail: React.FC = () => {
               <div className="bg-card rounded-xl p-8 md:p-12 shadow-md border border-border">
                 {/* Description */}
                 <div className="mb-12">
-                  <div className="text-charcoal-light leading-relaxed text-lg mb-6 space-y-4">
-                    {teachingDetail ? (language === 'en' ? teachingDetail.description.en : teachingDetail.description.sw).split('. ').map((sentence, index, array) => (
-                      <p key={index}>
-                        {sentence}{index < array.length - 1 ? '.' : ''}
-                      </p>
+                  <div className="text-charcoal-light leading-relaxed text-lg mb-6 space-y-4 font-serif">
+                    {teachingDetail ? (language === 'en' ? teachingDetail.description.en : teachingDetail.description.sw).map((paragraph, index) => (
+                      <p key={index} dangerouslySetInnerHTML={{ __html: boldKeywords(paragraph) }} />
                     )) : ''}
                   </div>
                 </div>
@@ -109,9 +117,7 @@ const TeachingDetail: React.FC = () => {
                     {teachingDetail && teachingDetail.keyPoints[language === 'en' ? 'en' : 'sw'].map((point, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-charcoal-light leading-relaxed">
-                          {point}
-                        </p>
+                        <p className="text-charcoal-light leading-relaxed font-serif" dangerouslySetInnerHTML={{ __html: boldKeywords(point) }} />
                       </li>
                     ))}
                   </ul>

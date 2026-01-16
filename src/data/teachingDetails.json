@@ -2,8 +2,12 @@
   {
     "id": "character-of-god",
     "description": {
-      "en": "An introduction to God’s character as the foundation of all truth, revealing who God is and how His nature shapes faith and life.",
-      "sw": "Utangulizi wa tabia ya Mungu kama msingi wa ukweli wote, ukifunua Mungu ni nani na jinsi tabia yake inavyojenga imani na maisha."
+      "en": [
+        "An introduction to God’s character as the foundation of all truth, revealing who God is and how His nature shapes faith and life."
+      ],
+      "sw": [
+        "Utangulizi wa tabia ya Mungu kama msingi wa ukweli wote, ukifunua Mungu ni nani na jinsi tabia yake inavyojenga imani na maisha."
+      ]
     },
     "keyPoints": {
       "en": [
@@ -21,8 +25,12 @@
   {
     "id": "god-is-love",
     "description": {
-      "en": "A study revealing love as God’s very nature, not merely His actions.",
-      "sw": "Somo linalofunua kwamba upendo ni asili ya Mungu, si tendo lake tu."
+      "en": [
+        "A study revealing love as God’s very nature, not merely His actions."
+      ],
+      "sw": [
+        "Somo linalofunua kwamba upendo ni asili ya Mungu, si tendo lake tu."
+      ]
     },
     "keyPoints": {
       "en": [
@@ -40,8 +48,12 @@
   {
     "id": "law-of-love",
     "description": {
-      "en": "An explanation of God’s law as a reflection of His loving character.",
-      "sw": "Ufafanuzi wa sheria ya Mungu kama kielelezo cha tabia yake ya upendo."
+      "en": [
+        "An explanation of God’s law as a reflection of His loving character."
+      ],
+      "sw": [
+        "Ufafanuzi wa sheria ya Mungu kama kielelezo cha tabia yake ya upendo."
+      ]
     },
     "keyPoints": {
       "en": [
@@ -59,8 +71,16 @@
   {
     "id": "what-is-sin",
     "description": {
-      "en": "A biblical explanation of sin as rebellion against God’s law and character of love.",
-      "sw": "Maelezo ya kibiblia ya dhambi kama uasi dhidi ya sheria na tabia ya Mungu ya upendo."
+      "en": [
+        "The prophecy of the first angel’s message, brought to view in Revelation 14, found its fulfillment in the advent movement of 1840-44. In both Europe and America, men of faith and prayer were deeply moved as their attention was called to the prophecies, and, tracing down the Inspired Record, they saw convincing evidence that the end of all things was at hand. The Spirit of God urged His servants to give the warning. Far and wide spread the message of the everlasting gospel, “Fear God, and give glory to Him; for the hour of His judgment is come.” Revelation 14:7."
+        ,"Wherever missionaries had penetrated, were sent the glad tidings of Christ’s speedy return. In different lands were found isolated bodies of Christians, who, solely by the study of the Scriptures, had arrived at the belief that the Saviour’s advent was near. In some portions of Europe, where the laws were so oppressive as to forbid the preaching of the advent doctrine, little children were impelled to declare it, and many listened to the solemn warning."
+      ],
+      "sw": [
+        "Unabii wa ujumbe wa malaika wa kwanza, unaoonekana katika Ufunuo 14, ulipata utimilifu wake katika harakati za majilio za mwaka 1840-44.",
+        "Katika Ulaya na Amerika, watu wa imani na maombi waliguswa sana wakati fikra zao zilipoelekezwa kwenye unabii huo, na walipofuatilia Maandiko Matakatifu (Kumbukumbu Iliyoongozwa na Roho), waliona ushahidi wenye kusadikisha kwamba mwisho wa mambo yote ulikuwa karibu.",
+        "Roho wa Mungu aliwahimiza watumishi Wake kutoa onyo hilo.",
+        "Kila mahali, ujumbe wa injili ya milele ulienea: \"Mcheni Mungu, na kumtukuza; kwa maana saa ya hukumu yake imekuja.\" (Ufunuo 14:7)."
+      ]
     },
     "keyPoints": {
       "en": [
@@ -78,8 +98,12 @@
   {
     "id": "the-cross-explained",
     "description": {
-      "en": "A clear explanation of the cross as the meeting point of God’s justice and mercy.",
-      "sw": "Ufafanuzi wa msalaba kama mahali ambapo haki na rehema ya Mungu hukutana."
+      "en": [
+        "A clear explanation of the cross as the meeting point of God’s justice and mercy."
+      ],
+      "sw": [
+        "Ufafanuzi wa msalaba kama mahali ambapo haki na rehema ya Mungu hukutana."
+      ]
     },
     "keyPoints": {
       "en": [
@@ -97,8 +121,12 @@
   {
     "id": "walking-with-god",
     "description": {
-      "en": "A study showing that eternal life begins now through a daily relationship with God.",
-      "sw": "Somo linaloonyesha kuwa uzima wa milele unaanza sasa kupitia uhusiano wa kila siku na Mungu."
+      "en": [
+        "A study showing that eternal life begins now through a daily relationship with God."
+      ],
+      "sw": [
+        "Somo linaloonyesha kuwa uzima wa milele unaanza sasa kupitia uhusiano wa kila siku na Mungu."
+      ]
     },
     "keyPoints": {
       "en": [
