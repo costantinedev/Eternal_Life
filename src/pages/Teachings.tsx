@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { BookOpen, Heart, Scale, AlertCircle, Cross, Sun, ArrowRight, Clock } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -22,17 +22,28 @@ interface Teaching {
 const Teachings: React.FC = () => {
   const { language } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [searchParams] = useSearchParams();
 
   const categories = [
     { id: 'all', label: language === 'en' ? 'All Teachings' : 'Mafundisho Yote', icon: BookOpen },
     { id: 'character', label: language === 'en' ? "God's Character" : 'Tabia ya Mungu', icon: Heart },
     { id: 'law', label: language === 'en' ? "God's Law" : 'Sheria ya Mungu', icon: Scale },
-    { id: 'sin', label: language === 'en' ? 'Understanding Sin' : 'Kuelewa Dhambi', icon: AlertCircle },
+    { id: 'message', label: language === 'en' ? 'Three Angel\'s Message' : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
     { id: 'redemption', label: language === 'en' ? 'Redemption in Christ' : 'Ukombozi katika Kristo', icon: Cross },
     { id: 'eternal-life', label: language === 'en' ? 'Living Eternal Life' : 'Kuishi Uzima wa Milele', icon: Sun },
   ];
 
-
+  useEffect(() => {
+    const stepParam = searchParams.get('step');
+    if (stepParam) {
+      const stepNumber = parseInt(stepParam);
+      // Filter teachings by step and set category accordingly
+      const stepTeachings = teachings.filter(t => t.step === stepNumber);
+      if (stepTeachings.length > 0) {
+        setSelectedCategory(stepTeachings[0].category);
+      }
+    }
+  }, [searchParams]);
 
   const filteredTeachings = selectedCategory === 'all'
     ? teachings

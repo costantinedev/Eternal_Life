@@ -1,0 +1,116 @@
+[
+  {
+    "id": "character-of-god",
+    "description": {
+      "en": "An introduction to God’s character as the foundation of all truth, revealing who God is and how His nature shapes faith and life.",
+      "sw": "Utangulizi wa tabia ya Mungu kama msingi wa ukweli wote, ukifunua Mungu ni nani na jinsi tabia yake inavyojenga imani na maisha."
+    },
+    "keyPoints": {
+      "en": [
+        "God’s character is the foundation of all truth",
+        "God is unchanging, holy, just, and merciful",
+        "Understanding God shapes how we understand Scripture and life"
+      ],
+      "sw": [
+        "Tabia ya Mungu ni msingi wa ukweli wote",
+        "Mungu habadiliki, ni mtakatifu, mwenye haki na rehema",
+        "Kumjua Mungu kunaunda uelewa wetu wa Maandiko na maisha"
+      ]
+    }
+  },
+  {
+    "id": "god-is-love",
+    "description": {
+      "en": "A study revealing love as God’s very nature, not merely His actions.",
+      "sw": "Somo linalofunua kwamba upendo ni asili ya Mungu, si tendo lake tu."
+    },
+    "keyPoints": {
+      "en": [
+        "Love defines who God is",
+        "God’s love is unconditional and sacrificial",
+        "True love flows from knowing God"
+      ],
+      "sw": [
+        "Upendo unafafanua Mungu ni nani",
+        "Upendo wa Mungu hauna masharti na ni wa kujitoa",
+        "Upendo wa kweli unatoka katika kumjua Mungu"
+      ]
+    }
+  },
+  {
+    "id": "law-of-love",
+    "description": {
+      "en": "An explanation of God’s law as a reflection of His loving character.",
+      "sw": "Ufafanuzi wa sheria ya Mungu kama kielelezo cha tabia yake ya upendo."
+    },
+    "keyPoints": {
+      "en": [
+        "God’s law reflects His character of love",
+        "Obedience is an expression of love",
+        "Love fulfills the law"
+      ],
+      "sw": [
+        "Sheria ya Mungu inaakisi tabia yake ya upendo",
+        "Utii ni matokeo ya upendo",
+        "Upendo hutimiza sheria"
+      ]
+    }
+  },
+  {
+    "id": "what-is-sin",
+    "description": {
+      "en": "A biblical explanation of sin as rebellion against God’s law and character of love.",
+      "sw": "Maelezo ya kibiblia ya dhambi kama uasi dhidi ya sheria na tabia ya Mungu ya upendo."
+    },
+    "keyPoints": {
+      "en": [
+        "Sin is transgression of God’s law",
+        "Sin breaks relationship with God",
+        "Sin leads to separation and death"
+      ],
+      "sw": [
+        "Dhambi ni kuvunja sheria ya Mungu",
+        "Dhambi huvunja uhusiano na Mungu",
+        "Dhambi huleta utengano na mauti"
+      ]
+    }
+  },
+  {
+    "id": "the-cross-explained",
+    "description": {
+      "en": "A clear explanation of the cross as the meeting point of God’s justice and mercy.",
+      "sw": "Ufafanuzi wa msalaba kama mahali ambapo haki na rehema ya Mungu hukutana."
+    },
+    "keyPoints": {
+      "en": [
+        "The cross reveals God’s love and justice",
+        "Christ bore the penalty of sin",
+        "Salvation is a gift through sacrifice"
+      ],
+      "sw": [
+        "Msalaba unaonyesha upendo na haki ya Mungu",
+        "Kristo alichukua adhabu ya dhambi",
+        "Wokovu ni zawadi kupitia dhabihu"
+      ]
+    }
+  },
+  {
+    "id": "walking-with-god",
+    "description": {
+      "en": "A study showing that eternal life begins now through a daily relationship with God.",
+      "sw": "Somo linaloonyesha kuwa uzima wa milele unaanza sasa kupitia uhusiano wa kila siku na Mungu."
+    },
+    "keyPoints": {
+      "en": [
+        "Eternal life is knowing God",
+        "Relationship with God begins now",
+        "Daily communion sustains spiritual life"
+      ],
+      "sw": [
+        "Uzima wa milele ni kumjua Mungu",
+        "Uhusiano na Mungu unaanza sasa",
+        "Ushirika wa kila siku huimarisha maisha ya kiroho"
+      ]
+    }
+  }
+]

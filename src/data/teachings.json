@@ -34,11 +34,22 @@
   },
   {
     "id": "what-is-sin",
-    "title": "What is Sin? Understanding Our Separation from God",
-    "titleSw": "Dhambi ni Nini? Kuelewa Kutengana Kwetu na Mungu",
+    "title": "What is three angles Message?...",
+    "titleSw": "What is three angles Message",
     "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
     "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
-    "category": "sin",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "step": 3,
+    "readTime": "14 min"
+  },
+   {
+    "id": "opp",
+    "title": "What is three angles Message",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
     "categorySw": "Kuelewa Dhambi",
     "step": 3,
     "readTime": "14 min"
