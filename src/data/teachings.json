@@ -32,28 +32,181 @@
     "step": 2,
     "readTime": "15 min"
   },
+  
+
   {
-    "id": "what-is-sin",
-    "title": "What is three angles Message?...",
+    "id": "first-angel-message",
+    "title": "First Angle's Message",
+    "titleSw": "What is three angles Message",
+    "excerpt": " Revelation 14:7. He said in a loud voice, “Fear God and give him glory, because the hour of his judgment has come. Worship him who made the heavens, the earth, the sea and the springs of water.”",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "first",
+    "step": 3,
+    "readTime": "1"
+  },
+   {
+    "id": "religious-revival",
+    "title": "A Great Religious Revival",
     "titleSw": "What is three angles Message",
     "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
     "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
     "category": "message",
     "categorySw": "Kuelewa Dhambi",
+    "subcategory": "first",
+    "step": 3,
+    "readTime": "2"
+  },
+     {
+    "id": "opposition",
+    "title": "Opposition",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "first",
+    "step": 3,
+    "readTime": "3"
+  },
+     {
+    "id": "meet-lord",
+    "title": "Preparing to Meet the Lord",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "first",
+    "step": 3,
+    "readTime": "4"
+  },
+ 
+    
+  
+   {
+    "id": "second-angel-message",
+    "title": "The Second Angel’s Message",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
+    "step": 3,
+    "readTime": "1 min"
+  },
+   {
+    "id": "tarrying-time",
+    "title": "The Tarrying Time",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
+    "step": 3,
+    "readTime": "14 min"
+  },
+    {
+    "id": "midnight-cry",
+    "title": "The Midnight Cry",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
+    "step": 3,
+    "readTime": "14 min"
+  },
+      {
+    "id": "disappoinement",
+    "title": "Disappointed but Not Forsaken",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
     "step": 3,
     "readTime": "14 min"
   },
    {
-    "id": "opp",
-    "title": "What is three angles Message",
+    "id": "sanctuary",
+    "title": "The Sanctuary",
     "titleSw": "What is three angles Message",
     "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
     "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
     "category": "message",
     "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
     "step": 3,
     "readTime": "14 min"
   },
+   {
+    "id": "earthly-and-heavenly-sanctuaries",
+    "title": "The Earthly and Heavenly Sanctuaries",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
+    "step": 3,
+    "readTime": "14 min"
+  },
+  {
+    "id": "cleansing-of-the-sanctuary",
+    "title": "The Cleansing of the Sanctuary",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "second",
+    "step": 3,
+    "readTime": "14 min"
+  },
+   {
+    "id": "third-angel-message",
+    "title": "The Third Angel’s Message",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "third",
+    "step": 3,
+    "readTime": "14 min"
+  },
+
+    {
+    "id": "beast-and-its-image",
+    "title": "The Beast and Its Image",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "third",
+    "step": 3,
+    "readTime": "14 min"
+  },
+   {
+    "id": "solemn-message",
+    "title": "A Solemn Message",
+    "titleSw": "What is three angles Message",
+    "excerpt": "Sin is the transgression of God's law—a departure from His character of love. Understanding sin helps us appreciate the gift of salvation.",
+    "excerptSw": "Dhambi ni kuvunja sheria ya Mungu—kuondoka kutoka tabia yake ya upendo. Kuelewa dhambi kunatusaidia kuthamini zawadi ya wokovu.",
+    "category": "message",
+    "categorySw": "Kuelewa Dhambi",
+    "subcategory": "third",
+    "step": 3,
+    "readTime": "14 min"
+  },
+  
   {
     "id": "the-cross-explained",
     "title": "The Cross: Where Justice and Mercy Meet",

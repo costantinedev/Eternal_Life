@@ -125,16 +125,26 @@ const TeachingDetail: React.FC = () => {
 
                 {/* Navigation */}
                 <div className="flex flex-col sm:flex-row gap-4 mt-12 pt-8 border-t border-border">
-                  <Button variant="outline" asChild className="flex-1">
-                    <Link to="/teachings">
-                      {language === 'en' ? 'Back to All Teachings' : 'Rudi kwenye Mafundisho Yote'}
-                    </Link>
-                  </Button>
-                  <Button asChild className="flex-1">
-                    <Link to="/journey">
-                      {language === 'en' ? 'Continue Journey' : 'Endelea Safari'}
-                    </Link>
-                  </Button>
+                  {(() => {
+                    const currentIndex = teachings.findIndex(t => t.id === id);
+                    const prevTeaching = currentIndex > 0 ? teachings[currentIndex - 1] : null;
+                    const nextTeaching = currentIndex < teachings.length - 1 ? teachings[currentIndex + 1] : null;
+
+                    return (
+                      <>
+                        <Button variant="outline" asChild className="flex-1">
+                          <Link to={prevTeaching ? `/teachings/${prevTeaching.id}` : '/teachings'}>
+                            {language === 'en' ? 'Previous' : 'Iliyopita'}
+                          </Link>
+                        </Button>
+                        <Button asChild className="flex-1">
+                          <Link to={nextTeaching ? `/teachings/${nextTeaching.id}` : '/journey'}>
+                            {language === 'en' ? 'Next' : 'Ijayo'}
+                          </Link>
+                        </Button>
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
             </div>

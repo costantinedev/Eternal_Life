@@ -1,10 +1,8 @@
-# TODO: Update TeachingDetail.tsx to use full content from teachingDetails.json
+# TODO: Fix Subcategory Filtering in Teachings Page
 
 ## Tasks
-- [ ] Import teachingDetails.json into TeachingDetail.tsx
-- [ ] Add logic to find matching teaching detail by id
-- [ ] Replace Introduction section with actual introduction.text (bilingual)
-- [ ] Replace Biblical Foundation section with biblicalFoundation.text and scripture (bilingual)
-- [ ] Replace Practical Application section with practicalApplication.text and points array (bilingual)
-- [ ] Replace Conclusion section with conclusion.text and scripture (bilingual)
-- [ ] Test the changes to ensure proper display
+- [x] Compute available subcategories dynamically for the selected category
+- [x] Update subcategory filter UI to show only available subcategories with proper labels
+- [x] Update filtering logic to apply subcategory filter for any category when selected
+- [x] Ensure subcategory resets to 'all' when category changes
+- [x] Test the filtering functionality
