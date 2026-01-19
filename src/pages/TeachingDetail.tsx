@@ -16,7 +16,7 @@ const TeachingDetail: React.FC = () => {
   const teachingDetail = teachingDetails.find(t => t.id === id);
 
   const boldKeywords = (text: string) => {
-    const keywords = ['God', 'Christ', 'Jesus', 'Holy Spirit', 'Bible', 'Scripture', 'Three Angle\'s Message', 'Redemption', 'Eternal Life','Mungu','Roho'];
+    const keywords = ['God', 'Christ', 'Jesus', 'Holy Spirit', 'Bible', 'Scripture', 'Three Angle\'s Message', 'Redemption', 'Eternal Life','Mungu','Roho', 'Yesu','Ufunuo'];
     let boldedText = text;
     keywords.forEach(keyword => {
       const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
