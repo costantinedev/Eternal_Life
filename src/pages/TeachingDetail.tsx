@@ -77,19 +77,17 @@ const TeachingDetail: React.FC = () => {
                 <span className="text-sm font-semibold text-gold uppercase tracking-wide">
                   {language === 'en' ? 'Step' : 'Hatua'} {teaching.step}
                 </span>
-                <span className="flex items-center gap-1 text-sm text-cream/80">
-                  <Clock className="w-4 h-4" />
-                  {teaching.readTime}
-                </span>
+                
               </div>
 
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-6">
                 {language === 'en' ? teaching.title : teaching.titleSw}
               </h1>
 
-              <p className="text-lg md:text-xl text-cream/80 max-w-3xl mx-auto">
+                       
+               <blockquote className="scripture-quote mb-6  text-white text-lg" >
                 {language === 'en' ? teaching.excerpt : teaching.excerptSw}
-              </p>
+               </blockquote>
             </div>
           </div>
         </section>

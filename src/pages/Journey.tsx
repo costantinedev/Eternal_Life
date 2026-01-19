@@ -74,9 +74,6 @@ const Journey: React.FC = () => {
                           {language === 'en' ? step.subtitle : step.subtitleSw}
                         </p>
 
-                        <p className="text-charcoal-light leading-relaxed mb-6">
-                          {language === 'en' ? step.description : step.descriptionSw}
-                        </p>
 
                         {/* Scripture */}
                         <blockquote className="scripture-quote mb-6">
