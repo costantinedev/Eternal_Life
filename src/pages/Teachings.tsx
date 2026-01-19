@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { BookOpen, Heart, Scale, AlertCircle, Cross, Sun, ArrowRight, Clock } from 'lucide-react';
+import { BookOpen, Heart, Scale, AlertCircle, Cross, Sun, ArrowRight, Clock, Search } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { useLanguage } from '@/contexts/LanguageContext';
 import teachings from '@/data/teachings.json';
 
@@ -24,6 +25,7 @@ const Teachings: React.FC = () => {
   const { language } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
   const [searchParams] = useSearchParams();
 
   const categories = [
@@ -71,11 +73,17 @@ const Teachings: React.FC = () => {
     }),
   ];
 
-  // Filter teachings based on category and subcategory
+  // Filter teachings based on category, subcategory, and search term
   const filteredTeachings = teachings.filter(t => {
     const categoryMatch = selectedCategory === 'all' || t.category === selectedCategory;
     const subcategoryMatch = selectedSubcategory === 'all' || t.subcategory === selectedSubcategory;
-    return categoryMatch && subcategoryMatch;
+    const searchMatch = searchTerm === '' ||
+      (language === 'en'
+        ? (t.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           t.excerpt.toLowerCase().includes(searchTerm.toLowerCase()))
+        : (t.titleSw.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           t.excerptSw.toLowerCase().includes(searchTerm.toLowerCase())));
+    return categoryMatch && subcategoryMatch && searchMatch;
   });
 
   return (
@@ -94,6 +102,24 @@ const Teachings: React.FC = () => {
                 ? 'Biblical teachings organized to guide you step by step into a deeper knowledge of God.'
                 : 'Mafundisho ya Biblia yaliyopangwa kukuongoza hatua kwa hatua katika ujuzi wa kina wa Mungu.'}
             </p>
+          </div>
+        </section>
+
+        {/* Search Filter */}
+        <section className="py-6 bg-cream border-b border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-md mx-auto">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+                <Input
+                  type="text"
+                  placeholder={language === 'en' ? 'Search teachings...' : 'Tafuta mafundisho...'}
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-10"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -204,8 +230,8 @@ const Teachings: React.FC = () => {
                 <BookOpen className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
                 <p className="text-muted-foreground">
                   {language === 'en'
-                    ? 'No teachings found in this category yet.'
-                    : 'Hakuna mafundisho yaliyopatikana katika kategoria hii bado.'}
+                    ? 'No teachings found matching your criteria.'
+                    : 'Hakuna mafundisho yaliyopatikana yanayolingana na vigezo vyako.'}
                 </p>
               </div>
             )}
