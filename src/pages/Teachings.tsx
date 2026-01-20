@@ -31,7 +31,7 @@ const Teachings: React.FC = () => {
   const categories = [
     { id: 'all', label: language === 'en' ? 'All Teachings' : 'Mafundisho Yote', icon: BookOpen },
     { id: 'character', label: language === 'en' ? "God's Character" : 'Tabia ya Mungu', icon: Heart },
-    { id: 'law', label: language === 'en' ? "God's Law" : 'Sheria ya Mungu', icon: Scale },
+    { id: 'law', label: language === 'en' ? "Plan Of Salvation" : 'Sheria ya Mungu', icon: Scale },
     { id: 'message', label: language === 'en' ? "Three Angel's Message" : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
     { id: 'redemption', label: language === 'en' ? 'Redemption in Christ' : 'Ukombozi katika Kristo', icon: Cross },
     { id: 'eternal-life', label: language === 'en' ? 'Living Eternal Life' : 'Kuishi Uzima wa Milele', icon: Sun },
@@ -175,50 +175,107 @@ const Teachings: React.FC = () => {
         {/* Teachings Grid */}
         <section className="py-16 bg-cream">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {filteredTeachings.map(teaching => (
-                <article
-                  key={teaching.id}
-                  className="bg-card rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-shadow duration-300 flex flex-col"
-                >
-                  <div className="p-6 flex-grow">
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-xs font-semibold text-gold uppercase tracking-wide">
-                        {teaching.subcategory
-                          ? teaching.subcategory === 'first'
-                            ? language === 'en' ? 'First Angel\'s Message' : 'Ujumbe wa Malaika wa Kwanza'
-                            : teaching.subcategory === 'second'
-                              ? language === 'en' ? 'Second Angel\'s Message' : 'Ujumbe wa Malaika wa Pili'
-                              : teaching.subcategory === 'third'
-                                ? language === 'en' ? 'Third Angel\'s Message' : 'Ujumbe wa Malaika wa Tatu'
-                                : teaching.subcategory.charAt(0).toUpperCase() + teaching.subcategory.slice(1)
-                          : language === 'en'
-                            ? categories.find(c => c.id === teaching.category)?.label
-                            : teaching.categorySw}
-                      </span>
+            {selectedCategory === 'message' ? (
+              // Grouped display for Three Angels' Messages
+              <>
+                {['first', 'second', 'third'].map(subcategory => {
+                  const subcategoryTeachings = filteredTeachings.filter(t => t.subcategory === subcategory);
+                  if (subcategoryTeachings.length === 0) return null;
+
+                  const subcategoryLabel = subcategory === 'first'
+                    ? (language === 'en' ? 'First Angel\'s Message' : 'Ujumbe wa Malaika wa Kwanza')
+                    : subcategory === 'second'
+                      ? (language === 'en' ? 'Second Angel\'s Message' : 'Ujumbe wa Malaika wa Pili')
+                      : (language === 'en' ? 'Third Angel\'s Message' : 'Ujumbe wa Malaika wa Tatu');
+
+                  return (
+                    <div key={subcategory} className="mb-16">
+                      <h2 className="font-serif text-3xl md:text-4xl font-bold text-charcoal mb-8 text-center">
+                        {subcategoryLabel}
+                      </h2>
+                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {subcategoryTeachings.map(teaching => (
+                          <article
+                            key={teaching.id}
+                            className="bg-card rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-shadow duration-300 flex flex-col"
+                          >
+                            <div className="p-6 flex-grow">
+                              <div className="flex items-center justify-between mb-4">
+                                <span className="text-xs font-semibold text-gold uppercase tracking-wide">
+                                  {subcategoryLabel}
+                                </span>
+                              </div>
+
+                              <h3 className="font-serif text-xl font-semibold text-charcoal mb-3 line-clamp-2">
+                                {language === 'en' ? teaching.title : teaching.titleSw}
+                              </h3>
+                              <blockquote className="scripture-quote mb-6" >
+                                {language === 'en' ? teaching.excerpt : teaching.excerptSw}
+                              </blockquote>
+                            </div>
+
+                            <div className="px-6 pb-6">
+                              <Button variant="outline" size="sm" className="w-full" asChild>
+                                <Link to={`/teachings/${teaching.id}`} className="flex items-center justify-center gap-2">
+                                  {language === 'en' ? 'Read Teaching' : 'Soma Fundisho'}
+                                  <ArrowRight className="w-4 h-4" />
+                                </Link>
+                              </Button>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </>
+            ) : (
+              // Regular grid display for other categories
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {filteredTeachings.map(teaching => (
+                  <article
+                    key={teaching.id}
+                    className="bg-card rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-shadow duration-300 flex flex-col"
+                  >
+                    <div className="p-6 flex-grow">
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-xs font-semibold text-gold uppercase tracking-wide">
+                          {teaching.subcategory
+                            ? teaching.subcategory === 'first'
+                              ? language === 'en' ? 'First Angel\'s Message' : 'Ujumbe wa Malaika wa Kwanza'
+                              : teaching.subcategory === 'second'
+                                ? language === 'en' ? 'Second Angel\'s Message' : 'Ujumbe wa Malaika wa Pili'
+                                : teaching.subcategory === 'third'
+                                  ? language === 'en' ? 'Third Angel\'s Message' : 'Ujumbe wa Malaika wa Tatu'
+                                  : teaching.subcategory.charAt(0).toUpperCase() + teaching.subcategory.slice(1)
+                            : language === 'en'
+                              ? categories.find(c => c.id === teaching.category)?.label
+                              : teaching.categorySw}
+                        </span>
+
+                      </div>
+
+                      <h3 className="font-serif text-xl font-semibold text-charcoal mb-3 line-clamp-2">
+                        {language === 'en' ? teaching.title : teaching.titleSw}
+                      </h3>
+                      <blockquote className="scripture-quote mb-6" >
+                        {language === 'en' ? teaching.excerpt : teaching.excerptSw}
+                      </blockquote>
 
                     </div>
 
-                    <h3 className="font-serif text-xl font-semibold text-charcoal mb-3 line-clamp-2">
-                      {language === 'en' ? teaching.title : teaching.titleSw}
-                    </h3>
-                    <blockquote className="scripture-quote mb-6" >
-                      {language === 'en' ? teaching.excerpt : teaching.excerptSw}
-                    </blockquote>
-
-                  </div>
-
-                  <div className="px-6 pb-6">
-                    <Button variant="outline" size="sm" className="w-full" asChild>
-                      <Link to={`/teachings/${teaching.id}`} className="flex items-center justify-center gap-2">
-                        {language === 'en' ? 'Read Teaching' : 'Soma Fundisho'}
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </article>
-              ))}
-            </div>
+                    <div className="px-6 pb-6">
+                      <Button variant="outline" size="sm" className="w-full" asChild>
+                        <Link to={`/teachings/${teaching.id}`} className="flex items-center justify-center gap-2">
+                          {language === 'en' ? 'Read Teaching' : 'Soma Fundisho'}
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
 
             {filteredTeachings.length === 0 && (
               <div className="text-center py-12">

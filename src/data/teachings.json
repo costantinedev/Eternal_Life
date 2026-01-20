@@ -10,21 +10,11 @@
     "step": 1,
     "readTime": "12 min"
   },
+ 
   {
-    "id": "god-is-love",
-    "title": "God is Love: The Essence of His Being",
-    "titleSw": "Mungu ni Upendo: Kiini cha Uwepo Wake",
-    "excerpt": "Love is not merely something God does—it is who He is. Understanding this truth transforms our relationship with Him.",
-    "excerptSw": "Upendo si jambo tu Mungu anafanya—ni yeye ni nani. Kuelewa ukweli huu kunabadilisha uhusiano wetu naye.",
-    "category": "character",
-    "categorySw": "Tabia ya Mungu",
-    "step": 1,
-    "readTime": "10 min"
-  },
-  {
-    "id": "law-of-love",
-    "title": "The Law of Love: Understanding God's Commandments",
-    "titleSw": "Sheria ya Upendo: Kuelewa Amri za Mungu",
+    "id": "plan-of-salvation",
+    "title": "A Plan Of Salvation",
+    "titleSw": "Mpango Wa Ukombozi",
     "excerpt": "God's law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.",
     "excerptSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.",
     "category": "law",
@@ -32,7 +22,50 @@
     "step": 2,
     "readTime": "15 min"
   },
-  
+   {
+    "id": "possible-way-0f-salvation",
+    "title": "The One Possible Way of Salvation",
+    "titleSw": "Njia Moja Pekee Inayowezekana ya Wokovu",
+    "excerpt": "God's law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.",
+    "excerptSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.",
+    "category": "law",
+    "categorySw": "Sheria ya Mungu",
+    "step": 2,
+    "readTime": "15 min"
+  },
+   {
+    "id": "God-law",
+    "title": "God’s Unchangeable Law",
+    "titleSw": "Sheria ya Mungu Isiyobadilika",
+    "excerpt": "God's law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.",
+    "excerptSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.",
+    "category": "law",
+    "categorySw": "Sheria ya Mungu",
+    "step": 2,
+    "readTime": "15 min"
+  },
+   {
+    "id": "view-of-future",
+    "title": "A View of the Future",
+    "titleSw": "Maono ya Baadaye",
+    "excerpt": "God's law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.",
+    "excerptSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.",
+    "category": "law",
+    "categorySw": "Sheria ya Mungu",
+    "step": 2,
+    "readTime": "15 min"
+  },
+   {
+    "id": "sacrificial-offering",
+    "title":"The Sacrificial Offering",
+    "titleSw": "Sadaka ya Dhabihu",
+    "excerpt": "God's law is not arbitrary rules but a reflection of His character. When we understand this, obedience becomes a response of love.",
+    "excerptSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho la tabia yake. Tunapoelewa hili, utii unakuwa jibu la upendo.",
+    "category": "law",
+    "categorySw": "Sheria ya Mungu",
+    "step": 2,
+    "readTime": "15 min"
+  },
 
   {
     "id": "first-angel-message",
