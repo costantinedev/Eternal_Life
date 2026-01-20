@@ -73,13 +73,6 @@ const TeachingDetail: React.FC = () => {
         <section className="py-16 md:py-20 bg-charcoal">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <span className="text-sm font-semibold text-gold uppercase tracking-wide">
-                  {language === 'en' ? 'Step' : 'Hatua'} {teaching.step}
-                </span>
-                
-              </div>
-
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-6">
                 {language === 'en' ? teaching.title : teaching.titleSw}
               </h1>

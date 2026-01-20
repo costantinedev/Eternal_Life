@@ -53,13 +53,13 @@ const Teachings: React.FC = () => {
   const availableSubcategories = selectedCategory === 'all'
     ? []
     : Array.from(
-        new Set(
-          teachings
-            .filter(t => t.category === selectedCategory)
-            .map(t => t.subcategory)
-            .filter(Boolean)
-        )
-      );
+      new Set(
+        teachings
+          .filter(t => t.category === selectedCategory)
+          .map(t => t.subcategory)
+          .filter(Boolean)
+      )
+    );
 
   // Map subcategory id to user-friendly label
   const subcategoryOptions = [
@@ -80,9 +80,9 @@ const Teachings: React.FC = () => {
     const searchMatch = searchTerm === '' ||
       (language === 'en'
         ? (t.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-           t.excerpt.toLowerCase().includes(searchTerm.toLowerCase()))
+          t.excerpt.toLowerCase().includes(searchTerm.toLowerCase()))
         : (t.titleSw.toLowerCase().includes(searchTerm.toLowerCase()) ||
-           t.excerptSw.toLowerCase().includes(searchTerm.toLowerCase())));
+          t.excerptSw.toLowerCase().includes(searchTerm.toLowerCase())));
     return categoryMatch && subcategoryMatch && searchMatch;
   });
 
@@ -136,11 +136,10 @@ const Teachings: React.FC = () => {
                       setSelectedCategory(cat.id);
                       setSelectedSubcategory('all');
                     }}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                      selectedCategory === cat.id
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${selectedCategory === cat.id
                         ? 'bg-gold text-primary-foreground shadow-md'
                         : 'bg-muted text-charcoal-light hover:bg-muted/80'
-                    }`}
+                      }`}
                   >
                     <IconComponent className="w-4 h-4" />
                     <span className="hidden sm:inline">{cat.label}</span>
@@ -160,11 +159,10 @@ const Teachings: React.FC = () => {
                   <button
                     key={sub.id}
                     onClick={() => setSelectedSubcategory(sub.id)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                      selectedSubcategory === sub.id
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${selectedSubcategory === sub.id
                         ? 'bg-gold text-primary-foreground shadow-md'
                         : 'bg-muted text-charcoal-light hover:bg-muted/80'
-                    }`}
+                      }`}
                   >
                     {sub.label}
                   </button>
@@ -190,27 +188,24 @@ const Teachings: React.FC = () => {
                           ? teaching.subcategory === 'first'
                             ? language === 'en' ? 'First Angel\'s Message' : 'Ujumbe wa Malaika wa Kwanza'
                             : teaching.subcategory === 'second'
-                            ? language === 'en' ? 'Second Angel\'s Message' : 'Ujumbe wa Malaika wa Pili'
-                            : teaching.subcategory === 'third'
-                            ? language === 'en' ? 'Third Angel\'s Message' : 'Ujumbe wa Malaika wa Tatu'
-                            : teaching.subcategory.charAt(0).toUpperCase() + teaching.subcategory.slice(1)
+                              ? language === 'en' ? 'Second Angel\'s Message' : 'Ujumbe wa Malaika wa Pili'
+                              : teaching.subcategory === 'third'
+                                ? language === 'en' ? 'Third Angel\'s Message' : 'Ujumbe wa Malaika wa Tatu'
+                                : teaching.subcategory.charAt(0).toUpperCase() + teaching.subcategory.slice(1)
                           : language === 'en'
-                          ? categories.find(c => c.id === teaching.category)?.label
-                          : teaching.categorySw}
+                            ? categories.find(c => c.id === teaching.category)?.label
+                            : teaching.categorySw}
                       </span>
-                      <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                        <Clock className="w-3 h-3" />
-                        {teaching.readTime}
-                      </span>
+
                     </div>
 
                     <h3 className="font-serif text-xl font-semibold text-charcoal mb-3 line-clamp-2">
                       {language === 'en' ? teaching.title : teaching.titleSw}
                     </h3>
-
-                    <p className="text-charcoal-light text-sm leading-relaxed line-clamp-3">
+                    <blockquote className="scripture-quote mb-6" >
                       {language === 'en' ? teaching.excerpt : teaching.excerptSw}
-                    </p>
+                    </blockquote>
+
                   </div>
 
                   <div className="px-6 pb-6">
