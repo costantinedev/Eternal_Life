@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ReadingSettings from '@/components/ReadingSettings';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,8 +55,9 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Language Toggle & Mobile Menu Button */}
+          {/* Language Toggle, Settings & Mobile Menu Button */}
           <div className="flex items-center gap-4">
+            <ReadingSettings />
             <Button
               variant="ghost"
               size="sm"

@@ -5,17 +5,21 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useReadingSettings } from '@/contexts/ReadingSettingsContext';
 import teachings from '@/data/teachings.json';
 import teachingDetails from '@/data/teachingDetails.json';
 
 const TeachingDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { language } = useLanguage();
+  const { settings, getFontSizeClass, getFontStyleClass } = useReadingSettings();
 
   const teaching = teachings.find(t => t.id === id);
   const teachingDetail = teachingDetails.find(t => t.id === id);
 
   const boldKeywords = (text: string) => {
+    if (!settings.highlightKeywords) return text;
+
     const keywords = ['God', 'Christ', 'Jesus', 'Holy Spirit', 'Bible', 'Scripture', 'Three Angle\'s Message', 'Redemption', 'Eternal Life','Mungu','Roho', 'Yesu','Ufunuo','Heaven','Father','Son'];
     let boldedText = text;
     keywords.forEach(keyword => {
@@ -92,7 +96,7 @@ const TeachingDetail: React.FC = () => {
               <div className="bg-card rounded-xl p-8 md:p-12 shadow-md border border-border">
                 {/* Description */}
                 <div className="mb-12">
-                  <div className="text-charcoal-light leading-relaxed text-lg mb-6 space-y-4 font-serif">
+                  <div className={`text-charcoal-light leading-relaxed mb-6 space-y-4 ${getFontSizeClass()} ${getFontStyleClass()}`}>
                     {teachingDetail ? (language === 'en' ? teachingDetail.description.en : teachingDetail.description.sw).map((paragraph, index) => (
                       <p key={index} dangerouslySetInnerHTML={{ __html: boldKeywords(paragraph) }} />
                     )) : ''}
@@ -108,7 +112,7 @@ const TeachingDetail: React.FC = () => {
                     {teachingDetail && teachingDetail.keyPoints[language === 'en' ? 'en' : 'sw'].map((point, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-charcoal-light leading-relaxed font-serif" dangerouslySetInnerHTML={{ __html: boldKeywords(point) }} />
+                        <p className={`text-charcoal-light leading-relaxed ${getFontSizeClass()} ${getFontStyleClass()}`} dangerouslySetInnerHTML={{ __html: boldKeywords(point) }} />
                       </li>
                     ))}
                   </ul>
@@ -128,11 +132,13 @@ const TeachingDetail: React.FC = () => {
                             {language === 'en' ? 'Previous' : 'Iliyopita'}
                           </Link>
                         </Button>
-                        <Button asChild className="flex-1">
-                          <Link to={nextTeaching ? `/teachings/${nextTeaching.id}` : '/journey'}>
-                            {language === 'en' ? 'Next' : 'Ijayo'}
-                          </Link>
-                        </Button>
+                        {nextTeaching && (
+                          <Button asChild className="flex-1">
+                            <Link to={`/teachings/${nextTeaching.id}`}>
+                              {language === 'en' ? 'Next' : 'Ijayo'}
+                            </Link>
+                          </Button>
+                        )}
                       </>
                     );
                   })()}

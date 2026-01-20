@@ -627,13 +627,48 @@
     }
   },
   {
-    "id": "walking-with-god",
+    "id": "new-earth",
     "description": {
       "en": [
-        "A study showing that eternal life begins now through a daily relationship with God."
+        "“And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away.” Revelation 21:1. The fire that consumes the wicked purifies the earth. Every trace of the curse is swept away. No eternally burning hell will keep before the ransomed the fearful consequences of sin. One reminder alone remains: our Redeemer will ever bear the marks of His crucifixion.",
+        "“O Tower of the flock, the strong hold of the daughter of Zion, unto thee shall it come, even the first dominion.” Micah 4:8. The kingdom forfeited by sin, Christ has regained, and the redeemed are to possess it with Him. “The righteous shall inherit the land, and dwell therein for ever.” Psalm 37:29.",
+        "A fear of making the saints’ inheritance seem too material has led many to spiritualize away the very truths which lead us to look upon the new earth as our home. Christ assured His disciples that He went to prepare mansions for them. Yet the apostle Paul declares, “Eye hath not seen, nor ear heard... the things which God hath prepared for them that love Him.”",
+        "In the Bible the inheritance of the saved is called a country. There the great Shepherd leads His flock to fountains of living waters. The tree of life yields its fruit every month. On those peaceful plains, beside those living streams, God’s people, so long pilgrims and wanderers, shall find a home."
       ],
       "sw": [
-        "Somo linaloonyesha kuwa uzima wa milele unaanza sasa kupitia uhusiano wa kila siku na Mungu."
+        "“Kisha nikaona mbingu mpya na nchi mpya; kwa maana mbingu za kwanza na nchi ya kwanza zimekwisha kupita.” Ufunuo 21:1. Moto unaowaangamiza waovu unaisafisha dunia. Kila alama ya laana inafagiliwa mbali. Hakuna hovyo la moto linalowaka milele litakaloweka mbele ya waliokombolewa matokeo ya kutisha ya dhambi. Kikumbusho kimoja tu kinabaki: Mwokozi wetu atazichukua daima alama za kusulubiwa Kwake.",
+        "“Nawe, Ee mnara wa kundi, kilima cha binti Sayuni, kitaletwa kwako, naam, ule utawala wa kwanza utakuja.” Mika 4:8. Ufalme uliopotea kwa sababu ya dhambi, Kristo ameurudisha, na waliokombolewa wataumiliki pamoja Naye. “Wenye haki watairithi nchi, nao watakaa humo milele.” Zaburi 37:29.",
+        "Hofu ya kufanya urithi wa watakatifu uonekane kama kitu halisi imewafanya wengi kuubadili kuwa wa kiroho tu na kuacha ukweli unaotufanya tuitazame nchi mpya kama nyumbani kwetu. Kristo aliwahakikishia wanafunzi Wake kwamba anakwenda kuwaandalia makao. Lakini mtume Paulo anasema, “Jicho halikuona, wala sikio halikusikia... mambo ambayo Mungu aliwaandalia wale wampandao.”",
+        "Katika Biblia urithi wa waliookolewa unaitwa nchi. Humo Mchungaji mkuu huwaongoza kundi Lake kwenye chemchemi za maji yaliyo hai. Mti wa uzima hutoa matunda yake kila mwezi. Katika nchi tambarare zenye amani, kando ya mito hiyo ya maji yaliyo hai, watu wa Mungu, ambao kwa muda mrefu walikuwa wasafiri na wapitaji, watapata nyumbani."
+      ]
+    },
+    "keyPoints": {
+      "en": [
+        "Eternal life is knowing God",
+        "Relationship with God begins now",
+        "Daily communion sustains spiritual life"
+      ],
+      "sw": [
+        "Uzima wa milele ni kumjua Mungu",
+        "Uhusiano na Mungu unaanza sasa",
+        "Ushirika wa kila siku huimarisha maisha ya kiroho"
+      ]
+    }
+  },
+  {
+    "id": "new-jerusalem",
+    "description": {
+      "en": [
+        "There is the New Jerusalem, “having the glory of God,” her light “like unto a stone most precious.” Revelation 21:11. In the city of God “there shall be no night.” We shall ever feel the freshness of the morning, and shall ever be far from its close. “I saw no temple therein: for the Lord God Almighty and the Lamb are the temple of it.” Revelation 21:22.",
+        "There immortal minds will study with never-failing delight the wonders of creative power, the mysteries of redeeming love. Every faculty will be developed, every capacity increased. The acquirement of knowledge will not weary the mind or exhaust the energies. There the grandest enterprises may be carried forward, the loftiest aspirations reached.",
+        "As the years of eternity roll, they will bring richer and more glorious revelations of God and of Christ. As knowledge is progressive, so will love, reverence, and happiness increase. The more men learn of God, the greater will be their admiration of His character.",
+        "“And every creature which is in heaven, and on earth... heard I saying, Blessing, and honour, and glory, and power, be unto Him that sitteth upon the throne, and unto the Lamb for ever and ever.” Revelation 5:13. Sin and sinners are no more, God’s entire universe is clean, and the great controversy is forever ended."
+      ],
+      "sw": [
+        "Kuna Yerusalemu Mpya, “wenye utukufu wa Mungu,” na nuru yake “kama jiwe la thamani kubwa sana.” Ufunuo 21:11. Katika mji wa Mungu “hakutakuwa na usiku.” Daima tutahisi upya wa asubuhi, na daima tutakuwa mbali na mwisho wake. “Nami sikuona hekalu ndani yake; kwa maana Bwana Mungu Mwenyezi na Mwana-Kondoo ndio hekalu lake.” Ufunuo 21:22.",
+        "Huko akili zisizokufa zitajifunza kwa furaha isiyofifia maajabu ya nguvu za uumbaji, na mafumbo ya upendo unaokomboa. Kila kipaji kitaendelezwa, kila uwezo utaongezeka. Kujipatia maarifa hakutachosha akili wala kumaliza nguvu. Huko miradi mikubwa zaidi inaweza kuendelezwa, matarajio ya juu kabisa kufikiwa, na malengo makuu kutimizwa.",
+        "Na kadiri miaka ya umilele inavyopita, italeta ufunuo tajiri zaidi na wenye utukufu zaidi wa Mungu na wa Kristo. Kadiri maarifa yanavyoongezeka, ndivyo upendo, heshima, na furaha vitakavyoongezeka. Kadiri wanadamu wanavyojifunza zaidi kumhusu Mungu, ndivyo utakavyokuwa mkuu zaidi mshangao wao kwa tabia Yake.",
+        "“Na kila kiumbe kilichoko mbinguni, na juu ya nchi... nalikisikia kikisema, Baraka, na heshima, na utukufu, na uweza una Yeye aketiye juu ya kiti cha enzi, na Mwana-Kondoo hata milele na milele.” Ufunuo 5:13. Dhambi na wenye dhambi hawapo tena, ulimwengu wote wa Mungu ni msafi, na pambano kuu limekwisha milele."
       ]
     },
     "keyPoints": {

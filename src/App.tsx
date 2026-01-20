@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { ReadingSettingsProvider } from "./contexts/ReadingSettingsContext";
 import Index from "./pages/Index";
 import Journey from "./pages/Journey";
 import KnowGod from "./pages/KnowGod";
@@ -17,22 +18,24 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <LanguageProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/journey" element={<Journey />} />
-            <Route path="/know-god" element={<KnowGod />} />
-            <Route path="/teachings" element={<Teachings />} />
-            <Route path="/teachings/:id" element={<TeachingDetail />} />
-            <Route path="/about" element={<About />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+      <ReadingSettingsProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/journey" element={<Journey />} />
+              <Route path="/know-god" element={<KnowGod />} />
+              <Route path="/teachings" element={<Teachings />} />
+              <Route path="/teachings/:id" element={<TeachingDetail />} />
+              <Route path="/about" element={<About />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </ReadingSettingsProvider>
     </LanguageProvider>
   </QueryClientProvider>
 );
