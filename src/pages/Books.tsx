@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Download, FileText } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Books: React.FC = () => {
   const { language } = useLanguage();
+  const [filterLanguage, setFilterLanguage] = useState<string>('all');
 
   // List of PDFs available for download
   const pdfs = [
@@ -17,19 +19,24 @@ const Books: React.FC = () => {
         ? 'A sample PDF file for demonstration purposes.'
         : 'Faili ya mfano ya PDF kwa madhumuni ya onyesho.',
       filename: 'costantine_cv.docx (3).pdf',
-      size: '1 KB'
+      size: '1 KB',
+      lang: 'en'
     },
- {
-      id: 'sample',
-      title: language === 'en' ? 'cover letter PDF' : 'Mfano wa PDF',
+    {
+      id: 'sample2',
+      title: language === 'en' ? 'Cover Letter PDF' : 'Barua ya Kufungua PDF',
       description: language === 'en'
-        ? 'A sample PDF file for demonstration purposes.'
-        : 'Faili ya mfano ya PDF kwa madhumuni ya onyesho.',
+        ? 'A sample cover letter PDF file.'
+        : 'Faili ya mfano ya barua ya kufungua PDF.',
       filename: 'cover letter.pdf',
-      size: '1 KB'
+      size: '1 KB',
+      lang: 'sw'
     }
     // Add more PDFs here as they are added to public/pdfs/
   ];
+
+  // Filter PDFs based on selected language
+  const filteredPdfs = filterLanguage === 'all' ? pdfs : pdfs.filter(pdf => pdf.lang === filterLanguage);
 
   const handleDownload = (filename: string) => {
     const link = document.createElement('a');
@@ -62,8 +69,22 @@ const Books: React.FC = () => {
         {/* Books Grid */}
         <section className="py-16 bg-cream">
           <div className="container mx-auto px-4">
+            {/* Language Filter */}
+            <div className="mb-8 flex justify-center">
+              <Select value={filterLanguage} onValueChange={setFilterLanguage}>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Filter by language" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All</SelectItem>
+                  <SelectItem value="en">English</SelectItem>
+                  <SelectItem value="sw">Swahili</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {pdfs.map(pdf => (
+              {filteredPdfs.map(pdf => (
                 <article
                   key={pdf.id}
                   className="bg-card rounded-xl overflow-hidden shadow-md border border-border hover:shadow-lg transition-shadow duration-300 flex flex-col"

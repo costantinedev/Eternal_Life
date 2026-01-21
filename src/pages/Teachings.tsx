@@ -33,7 +33,7 @@ const Teachings: React.FC = () => {
     { id: 'character', label: language === 'en' ? "God's Character" : 'Tabia ya Mungu', icon: Heart },
     { id: 'law', label: language === 'en' ? "Plan Of Salvation" : 'Sheria ya Mungu', icon: Scale },
     { id: 'message', label: language === 'en' ? "Three Angel's Message" : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
-    { id: 'redemption', label: language === 'en' ? 'Redemption in Christ' : 'Ukombozi katika Kristo', icon: Cross },
+    { id: 'redemption', label: language === 'en' ? 'History Repeats: Noah’s Day' : 'Historia Inajirudia: Siku za Nuhu', icon: Cross },
     { id: 'new-earth', label: language === 'en' ? 'The New Earth' : 'Nchi Mpya', icon: Sun },
   ];
 
