@@ -34,7 +34,7 @@ const Teachings: React.FC = () => {
     { id: 'law', label: language === 'en' ? "Plan Of Salvation" : 'Sheria ya Mungu', icon: Scale },
     { id: 'message', label: language === 'en' ? "Three Angel's Message" : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
     { id: 'redemption', label: language === 'en' ? 'Redemption in Christ' : 'Ukombozi katika Kristo', icon: Cross },
-    { id: 'eternal-life', label: language === 'en' ? 'The New Earth' : 'Nchi Mpya', icon: Sun },
+    { id: 'new-earth', label: language === 'en' ? 'The New Earth' : 'Nchi Mpya', icon: Sun },
   ];
 
   // If there's a step param, auto-select the category

@@ -10,6 +10,7 @@ import Journey from "./pages/Journey";
 import KnowGod from "./pages/KnowGod";
 import Teachings from "./pages/Teachings";
 import TeachingDetail from "./pages/TeachingDetail";
+import Books from "./pages/Books";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,8 @@ const App = () => (
               <Route path="/teachings" element={<Teachings />} />
               <Route path="/teachings/:id" element={<TeachingDetail />} />
               <Route path="/about" element={<About />} />
+              <Route path="/books" element={<Books />} />
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -254,22 +254,22 @@
   {
     "id": "new-earth",
     "title": "The New Earth",
-    "titleSw": "Kutembea na Mungu: Uzima wa Milele Unaanza Sasa",
+    "titleSw": "Nchi Mpya",
     "excerpt": "“And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away.” Revelation 21:1",
     "excerptSw": "Kisha nikaona mbingu mpya na nchi mpya; kwa maana mbingu za kwanza na nchi ya kwanza zimekwisha kupita",
-    "category": "eternal-life",
-    "categorySw": "Kuishi Uzima wa Milele",
+    "category": "new-earth",
+    "categorySw": "Nchi Mpya",
     "step": 5,
     "readTime": "16 min"
   },
    {
     "id": "new-jerusalem",
     "title": "The New Jerusalem",
-    "titleSw": "Kutembea na Mungu: Uzima wa Milele Unaanza Sasa",
+    "titleSw": "Yerusalemu Mpya",
     "excerpt": " “I will rejoice in Jerusalem, and joy in My people.” Isaiah 65:19. ",
-    "excerptSw": "Nami nitaufurahia mji wa Yerusalemu, nitawafurahia watu wangu.Sauti ya kilio haitasikika tena,kilio cha taabu hakitakuwako.",
-    "category": "eternal-life",
-    "categorySw": "Kuishi Uzima wa Milele",
+    "excerptSw": "Nami nitaufurahia mji wa Yerusalemu, nitawafurahia watu wangu.Sauti ya kilio haitasikika tena,kilio cha taabu hakitakuwako. Isaya 65:19",
+    "category": "new-earth",
+    "categorySw": "Yerusalemu Mpya",
     "step": 5,
     "readTime": "16 min"
   }

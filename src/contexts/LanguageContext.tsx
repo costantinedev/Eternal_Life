@@ -14,6 +14,7 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.journey': { en: 'The Journey', sw: 'Safari' },
   'nav.knowGod': { en: 'Know God', sw: 'Mjue Mungu' },
   'nav.teachings': { en: 'Teachings', sw: 'Mafundisho' },
+  'nav.books': { en: 'Books', sw: 'Vitabu' },
   'nav.about': { en: 'About', sw: 'Kuhusu' },
   
   // Hero Section

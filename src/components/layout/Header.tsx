@@ -15,6 +15,7 @@ const Header: React.FC = () => {
     { path: '/journey', label: t('nav.journey') },
     { path: '/know-god', label: t('nav.knowGod') },
     { path: '/teachings', label: t('nav.teachings') },
+    { path: '/books', label: t('nav.books') },
     { path: '/about', label: t('nav.about') },
   ];
 
@@ -46,7 +47,7 @@ const Header: React.FC = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   isActive(link.path)
-                    ? 'text-gold'
+                    ? 'text-gold border-b-2 border-gold'
                     : 'text-charcoal-light hover:text-gold'
                 }`}
               >
