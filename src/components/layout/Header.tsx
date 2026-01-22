@@ -13,11 +13,12 @@ const Header: React.FC = () => {
   const navLinks = [
     { path: '/', label: t('nav.home') },
     { path: '/journey', label: t('nav.journey') },
-    { path: '/know-god', label: t('nav.knowGod') },
+    // { path: '/know-god', label: t('nav.knowGod') },
     { path: '/teachings', label: t('nav.teachings') },
     { path: '/books', label: t('nav.books') },
-    { path: '/about', label: t('nav.about') },
-  ];
+  { path: '/about', label: t('nav.about') },
+  { path: '/contact', label: t('nav.contact') },
+];
 
   const isActive = (path: string) => location.pathname === path;
 

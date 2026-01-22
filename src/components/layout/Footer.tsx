@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Heart } from 'lucide-react';
+import { Mail, Heart, Computer, MessageCircle, Instagram, Facebook, Send } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer: React.FC = () => {
@@ -50,12 +50,40 @@ const Footer: React.FC = () => {
               {t('footer.connect')}
             </h3>
             <div className="space-y-3">
-              <a 
-                href="mailto:hello@john173.org" 
+              <a
+                href="mailto:hello@john173.org"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
                 info@eternallife.org
+              </a>
+              <a
+                href="https://wa.me/1234567890"
+                className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </a>
+              <a
+                href="https://instagram.com/eternallife"
+                className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
+              >
+                <Instagram className="w-4 h-4" />
+                Instagram
+              </a>
+              <a
+                href="https://t.me/eternallife"
+                className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
+              >
+                <Send className="w-4 h-4" />
+                Telegram
+              </a>
+              <a
+                href="https://facebook.com/eternallife"
+                className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
+              >
+                <Facebook className="w-4 h-4" />
+                Facebook
               </a>
             </div>
           </div>
@@ -68,7 +96,7 @@ const Footer: React.FC = () => {
               © {new Date().getFullYear()} Eternal Life {t('footer.rights')}
             </p>
             <p className="flex items-center gap-1 text-cream/60 text-sm">
-              Made with <Heart className="w-4 h-4 text-burgundy" /> for His glory
+              Made with <Computer className="w-4 h-4 text-burgundy" /> Costantine .dev
             </p>
           </div>
         </div>

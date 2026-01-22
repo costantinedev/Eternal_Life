@@ -16,6 +16,7 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.teachings': { en: 'Teachings', sw: 'Mafundisho' },
   'nav.books': { en: 'Books', sw: 'Vitabu' },
   'nav.about': { en: 'About', sw: 'Kuhusu' },
+  'nav.contact': { en: 'Contact', sw: 'Wasiliana' },
   
   // Hero Section
   'hero.title': { en: 'Know the Only True God', sw: 'Mjue Mungu wa Kweli Pekee' },
@@ -103,13 +104,26 @@ const translations: Record<string, Record<Language, string>> = {
   },
   'cta.button': { en: 'Start the Journey', sw: 'Anza Safari' },
 
+  // Contact
+  'contact.title': { en: 'Contact Us', sw: 'Wasiliana Nasi' },
+  'contact.description': { en: 'Get in touch with us for direct checking and spiritual guidance.', sw: 'Wasiliana nasi kwa uangalizi wa moja kwa moja na mwongozo wa kiroho.' },
+  'contact.name': { en: 'Name', sw: 'Jina' },
+  'contact.namePlaceholder': { en: 'Your name', sw: 'Jina lako' },
+  'contact.email': { en: 'Email', sw: 'Barua pepe' },
+  'contact.emailPlaceholder': { en: 'your.email@example.com', sw: 'barua.pepe@yako.com' },
+  'contact.message': { en: 'Message', sw: 'Ujumbe' },
+  'contact.messagePlaceholder': { en: 'Share your thoughts or questions...', sw: 'Shiriki mawazo au maswali yako...' },
+  'contact.submit': { en: 'Send Message', sw: 'Tuma Ujumbe' },
+  'contact.alternative': { en: 'Alternatively, you can reach us at:', sw: 'Vinginevyo, unaweza kutufikia kwa:' },
+  'contact.success': { en: 'Thank you for your message. We will get back to you soon!', sw: 'Asante kwa ujumbe wako. Tutawasiliana nawe hivi karibuni!' },
+
   // Footer
-  'footer.mission': { 
-    en: 'Guiding believers into a deeper, personal knowledge of God through Christ-centered mentorship.', 
-    sw: 'Kuwaongoza waamini katika ujuzi wa kina, wa kibinafsi wa Mungu kupitia uongozi unaomlenga Kristo.' 
+  'footer.mission': {
+    en: 'Guiding believers into a deeper, personal knowledge of God through Christ-centered mentorship.',
+    sw: 'Kuwaongoza waamini katika ujuzi wa kina, wa kibinafsi wa Mungu kupitia uongozi unaomlenga Kristo.'
   },
   'footer.quickLinks': { en: 'Quick Links', sw: 'Viungo vya Haraka' },
-  'footer.connect': { en: 'Connect', sw: 'Wasiliana' },
+  'footer.connect': { en: 'Join Groups and Platform', sw: 'Jiunge na Makundi na Jukwaa' },
   'footer.rights': { en: 'All rights reserved.', sw: 'Haki zote zimehifadhiwa.' },
 };
 
