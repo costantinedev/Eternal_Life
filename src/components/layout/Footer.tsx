@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
-                hello@john173.org
+                info@eternallife.org
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-cream/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-cream/60 text-sm">
-              © {new Date().getFullYear()} John 17:3 Mentorship. {t('footer.rights')}
+              © {new Date().getFullYear()} Eternal Life {t('footer.rights')}
             </p>
             <p className="flex items-center gap-1 text-cream/60 text-sm">
               Made with <Heart className="w-4 h-4 text-burgundy" /> for His glory

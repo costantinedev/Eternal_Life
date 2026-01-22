@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Target, BookOpen, Users, ArrowRight } from 'lucide-react';
+import { BookOpen, Heart, Users, Target, Sun } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -9,98 +9,101 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const About: React.FC = () => {
   const { language } = useLanguage();
 
-  const values = [
+  // Steps aligned with your blog's 5 topics
+  const steps = [
     {
       icon: BookOpen,
-      title: language === 'en' ? 'Scripture-Rooted' : 'Imejengwa juu ya Maandiko',
+      title: language === 'en' ? 'Why Was Sin Permitted?' : 'Kwa Nini Dhambi Iliruhusiwa?',
       description: language === 'en'
-        ? 'Every teaching is grounded in the Word of God. We believe the Bible is the inspired, authoritative guide for knowing God.'
-        : 'Kila fundisho limejengwa juu ya Neno la Mungu. Tunaamini Biblia ni mwongozo wa kuvuviwa, wenye mamlaka wa kumjua Mungu.',
+        ? 'Understanding God’s character, freedom, and the origin of evil.'
+        : 'Kuelewa tabia ya Mungu, uhuru wa kuchagua, na asili ya uovu.'
     },
     {
       icon: Heart,
-      title: language === 'en' ? 'Christ-Centered' : 'Inayomlenga Kristo',
+      title: language === 'en' ? 'The Plan of Salvation' : 'Mpango wa Wokovu',
       description: language === 'en'
-        ? 'Jesus Christ is the fullest revelation of God\'s character. All our teachings point to Him as the way, the truth, and the life.'
-        : 'Yesu Kristo ndiye ufunuo kamili wa tabia ya Mungu. Mafundisho yetu yote yanamuelekeza Yeye kama njia, ukweli, na uzima.',
+        ? 'God’s eternal plan to save humanity through Jesus Christ.'
+        : 'Mpango wa milele wa Mungu wa kumwokoa mwanadamu kupitia Yesu Kristo.'
+    },
+    {
+      icon: Sun,
+      title: language === 'en' ? 'The Three Angels’ Messages' : 'Ujumbe wa Malaika Watatu',
+      description: language === 'en'
+        ? 'Heaven’s final message calling the world back to God.'
+        : 'Ujumbe wa mwisho wa mbinguni unaouita ulimwengu urejee kwa Mungu.'
     },
     {
       icon: Users,
-      title: language === 'en' ? 'Mentorship-Focused' : 'Inayolenga Uongozi',
+      title: language === 'en' ? 'As It Was in the Days of Noah' : 'Kama Ilivyokuwa Siku za Nuhu',
       description: language === 'en'
-        ? 'We walk alongside believers, not lecture at them. Spiritual growth happens in relationship, not isolation.'
-        : 'Tunatembea pamoja na waumini, hatuwafundishi kwa mbali. Ukuaji wa kiroho hutokea katika uhusiano, si upweke.',
+        ? 'A warning from history repeating in the last days.'
+        : 'Onyo kutoka historia inayojirudia katika siku za mwisho.'
     },
     {
       icon: Target,
-      title: language === 'en' ? 'Transformation-Oriented' : 'Inayolenga Mabadiliko',
+      title: language === 'en' ? 'The New Heaven & New Earth' : 'Mbingu Mpya na Nchi Mpya',
       description: language === 'en'
-        ? 'Our goal is not information but transformation. We want believers to know God, not just know about Him.'
-        : 'Lengo letu si habari bali mabadiliko. Tunataka waumini wamjue Mungu, si kujua tu mambo yake.',
+        ? 'God’s promise of eternal life in a restored world.'
+        : 'Ahadi ya Mungu ya uzima wa milele katika ulimwengu uliorejeshwa.'
     },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-charcoal">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-6">
-                {language === 'en' ? 'About This Ministry' : 'Kuhusu Huduma Hii'}
-              </h1>
-              <p className="text-lg md:text-xl text-cream/80">
-                {language === 'en'
-                  ? 'A Christ-centered mentorship ministry dedicated to helping believers know God personally, deeply, and truthfully.'
-                  : 'Huduma ya uongozi inayomlenga Kristo iliyojitolea kusaidia waumini kumjua Mungu kibinafsi, kwa undani, na kwa ukweli.'}
-              </p>
-            </div>
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-cream mb-6">
+              {language === 'en' ? 'About This Ministry' : 'Kuhusu Huduma Hii'}
+            </h1>
+            <p className="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto">
+              {language === 'en'
+                ? 'A Christ-centered ministry dedicated to guiding believers through the journey of knowing God personally and experiencing eternal life.'
+                : 'Huduma inayomlenga Kristo, iliyojitolea kuongoza waumini katika safari ya kumjua Mungu kibinafsi na kupata uzima wa milele.'}
+            </p>
           </div>
         </section>
 
-        {/* Mission Section */}
+        {/* Foundation Section */}
         <section className="py-16 bg-cream">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="section-heading mb-8">
-                {language === 'en' ? 'Our Foundation' : 'Msingi Wetu'}
-              </h2>
-              
-              <blockquote className="font-serif text-2xl md:text-3xl italic text-charcoal mb-8 leading-relaxed">
-                {language === 'en'
-                  ? '"This is eternal life: that they may know You, the only true God, and Jesus Christ whom You have sent."'
-                  : '"Huu ndio uzima wa milele, wakujue Wewe, Mungu wa pekee wa kweli, na Yesu Kristo uliyemtuma."'}
-              </blockquote>
-              <p className="text-gold font-semibold mb-8">— John 17:3</p>
+          <div className="container mx-auto px-4 text-center max-w-3xl mx-auto">
+            <h2 className="section-heading mb-8">
+              {language === 'en' ? 'Our Foundation' : 'Msingi Wetu'}
+            </h2>
 
-              <div className="prose prose-lg mx-auto text-charcoal-light">
-                <p className="mb-6">
-                  {language === 'en'
-                    ? 'This verse is our foundation. Jesus Himself defined eternal life—not as endless existence, but as knowing God. This is not intellectual knowledge, but experiential, transformational relationship.'
-                    : 'Aya hii ndiyo msingi wetu. Yesu mwenyewe alifafanua uzima wa milele—si kuishi milele, bali kumjua Mungu. Hii si maarifa ya kiakili, bali uhusiano wa kupitia, unaobadilisha.'}
-                </p>
-                <p>
-                  {language === 'en'
-                    ? 'Our mission is to mentor believers into this knowledge—guiding them to understand God\'s character, His law of love, the nature of sin, and the redemption offered through Jesus Christ.'
-                    : 'Misheni yetu ni kuwaongoza waumini katika ujuzi huu—kuwaongoza kuelewa tabia ya Mungu, sheria yake ya upendo, asili ya dhambi, na ukombozi unaotolewa kupitia Yesu Kristo.'}
-                </p>
-              </div>
-            </div>
+            <blockquote className="font-serif text-2xl md:text-3xl italic text-charcoal mb-4 leading-relaxed">
+              {language === 'en'
+                ? '"Now this is eternal life: that they know You, the only true God, and Jesus Christ, whom You have sent."'
+                : '"Huu ndio uzima wa milele: kumjua Wewe Mungu wa kweli peke yako, na Yesu Kristo uliyemtuma."'}
+            </blockquote>
+            <p className="text-gold font-semibold mb-8">— John 17:3</p>
+
+            <p className="text-charcoal-light mb-6">
+              {language === 'en'
+                ? 'Jesus defines eternal life as a personal, transformational relationship with God, not just intellectual knowledge.'
+                : 'Yesu anafafanua uzima wa milele kama uhusiano wa kibinafsi, unaobadilisha, na Mungu, si maarifa ya kiakili tu.'}
+            </p>
+            <p className="text-charcoal-light">
+              {language === 'en'
+                ? 'Our mission is to guide believers step by step through understanding God’s character, His law, the nature of sin, His plan of salvation, and the promise of a restored creation.'
+                : 'Misheni yetu ni kuongoza waumini hatua kwa hatua kuelewa tabia ya Mungu, sheria yake, asili ya dhambi, mpango wa wokovu, na ahadi ya uumbaji uliorejeshwa.'}
+            </p>
           </div>
         </section>
 
-        {/* Values Section */}
+        {/* Steps / Featured Section */}
         <section className="py-16 bg-sage-light">
           <div className="container mx-auto px-4">
             <h2 className="section-heading text-center mb-12">
-              {language === 'en' ? 'Our Values' : 'Maadili Yetu'}
+              {language === 'en' ? 'Our Teaching Steps' : 'Hatua Zetu za Mafundisho'}
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {values.map((value, index) => {
-                const IconComponent = value.icon;
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {steps.map((step, index) => {
+                const IconComponent = step.icon;
                 return (
                   <div
                     key={index}
@@ -112,11 +115,9 @@ const About: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-serif text-xl font-semibold text-charcoal mb-2">
-                          {value.title}
+                          {step.title}
                         </h3>
-                        <p className="text-charcoal-light leading-relaxed">
-                          {value.description}
-                        </p>
+                        <p className="text-charcoal-light leading-relaxed">{step.description}</p>
                       </div>
                     </div>
                   </div>
@@ -126,57 +127,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* Approach Section */}
-        <section className="py-16 bg-cream">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="section-heading text-center mb-8">
-                {language === 'en' ? 'Our Approach' : 'Njia Yetu'}
-              </h2>
-              <div className="prose prose-lg mx-auto text-charcoal-light">
-                <p className="mb-6">
-                  {language === 'en'
-                    ? 'We believe in a structured yet Spirit-led approach to discipleship. Our teachings follow a logical, biblical flow:'
-                    : 'Tunaamini katika njia iliyopangwa lakini inayoongozwa na Roho ya uanafunzi. Mafundisho yetu yanafuata mtiririko wa kimantiki, wa kibiblia:'}
-                </p>
-                <ol className="space-y-4 list-decimal list-inside">
-                  <li className="pl-2">
-                    <strong>{language === 'en' ? "Know God's Character" : 'Jua Tabia ya Mungu'}</strong> — 
-                    {language === 'en' 
-                      ? ' Understanding who God is forms the foundation of all spiritual truth.'
-                      : ' Kuelewa Mungu ni nani kunatenga msingi wa ukweli wote wa kiroho.'}
-                  </li>
-                  <li className="pl-2">
-                    <strong>{language === 'en' ? "Understand His Law" : 'Elewa Sheria Yake'}</strong> — 
-                    {language === 'en'
-                      ? " God's law is a reflection of His character, founded on love."
-                      : ' Sheria ya Mungu ni onyesho la tabia yake, imejengwa juu ya upendo.'}
-                  </li>
-                  <li className="pl-2">
-                    <strong>{language === 'en' ? 'Recognize Sin' : 'Tambua Dhambi'}</strong> — 
-                    {language === 'en'
-                      ? ' Sin is the transgression of God\'s law—separation from His character.'
-                      : ' Dhambi ni kuvunja sheria ya Mungu—kutengana na tabia yake.'}
-                  </li>
-                  <li className="pl-2">
-                    <strong>{language === 'en' ? 'Accept Christ' : 'Mpokee Kristo'}</strong> — 
-                    {language === 'en'
-                      ? ' In Jesus, we see both God\'s justice and mercy perfectly revealed.'
-                      : ' Katika Yesu, tunaona haki na rehema ya Mungu zimefunuliwa kikamilifu.'}
-                  </li>
-                  <li className="pl-2">
-                    <strong>{language === 'en' ? 'Live Eternal Life' : 'Ishi Uzima wa Milele'}</strong> — 
-                    {language === 'en'
-                      ? ' Eternal life begins now in daily relationship with God.'
-                      : ' Uzima wa milele unaanza sasa katika uhusiano wa kila siku na Mungu.'}
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="py-16 bg-charcoal">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-cream mb-4">
@@ -184,13 +135,13 @@ const About: React.FC = () => {
             </h2>
             <p className="text-cream/80 mb-8 max-w-2xl mx-auto">
               {language === 'en'
-                ? 'We invite you to start this transformational journey of knowing God—not just about Him, but knowing Him personally.'
-                : 'Tunakualika uanze safari hii ya kubadilika ya kumjua Mungu—si kujua tu mambo yake, bali kumjua kibinafsi.'}
+                ? 'Start this transformational journey of knowing God personally and experiencing eternal life.'
+                : 'Anza safari hii ya kubadilika ya kumjua Mungu kibinafsi na kupata uzima wa milele.'}
             </p>
             <Button variant="hero" asChild>
               <Link to="/journey" className="flex items-center gap-2">
                 {language === 'en' ? 'Start the Journey' : 'Anza Safari'}
-                <ArrowRight className="w-5 h-5" />
+                <Sun className="w-5 h-5" />
               </Link>
             </Button>
           </div>

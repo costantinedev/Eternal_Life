@@ -70,10 +70,7 @@ const Journey: React.FC = () => {
                         <h2 className="font-serif text-2xl md:text-3xl font-semibold text-charcoal mb-1">
                           {language === 'en' ? step.title : step.titleSw}
                         </h2>
-                        <p className="text-muted-foreground text-sm mb-4">
-                          {language === 'en' ? step.subtitle : step.subtitleSw}
-                        </p>
-
+                   
 
                         {/* Scripture */}
                         <blockquote className="scripture-quote mb-6">

@@ -32,23 +32,58 @@ const translations: Record<string, Record<Language, string>> = {
   'hero.learnMore': { en: 'Learn More', sw: 'Jifunze Zaidi' },
 
   // Journey Section
-  'journey.title': { en: 'The Path to Knowing God', sw: 'Njia ya Kumjua Mungu' },
+  'journey.title': { en: 'From Sin to Salvation', sw: 'Kutoka Dhambini Hadi Wokovu' },
   'journey.subtitle': { 
-    en: 'Walk step by step from understanding who God is to living in daily fellowship with Him', 
-    sw: 'Tembea hatua kwa hatua kutoka kuelewa Mungu ni nani hadi kuishi katika ushirika naye kila siku' 
+    en: 'Discover God’s plan to restore humanity and bring eternal hope.', 
+    sw: 'Gundua mpango wa Mungu wa kurejesha binadamu na kuleta tumaini la milele' 
   },
   
   // Steps
-  'step1.title': { en: 'Why Sin Was Permitted?...', sw: 'Kwa nini dhambi Iliruhusiwa?...' },
-  'step1.desc': { en: 'Discover who God truly is through His revealed character', sw: 'Gundua Mungu ni nani kupitia tabia yake iliyofunuliwa' },
-  'step2.title': { en: 'The Plan of Salvation', sw: 'Mpango Wa Ukombozi' },
-  'step2.desc': { en: 'God\'s law reveals His character and is founded on love', sw: 'Sheria ya Mungu inafunua tabia yake na imejengwa juu ya upendo' },
-  'step3.title': { en: 'Three Ange\'s Message', sw: 'Ujumbe Wa Malaika Watatu' },
-  'step3.desc': { en: 'Through Jesus, we see both God\'s justice and mercy united', sw: 'Kupitia Yesu, tunaona haki na rehema ya Mungu zimeungana' },
-  'step4.title': { en: 'Justice and Judgment', sw: 'Haki Na Hukumu' },
-  'step4.desc': { en: 'Through Jesus, we see both God\'s justice and mercy united', sw: 'Kupitia Yesu, tunaona haki na rehema ya Mungu zimeungana' },
-  'step5.title': { en: 'A New Heaven and New Earth', sw: 'Mbingu Mpya na Nchi Mpya' },
-  'step5.desc': { en: 'Eternal life begins now in daily relationship with God', sw: 'Uzima wa milele unaanza sasa katika uhusiano wa kila siku na Mungu' },
+'step1.title': { 
+  en: 'Why Was Sin Permitted?', 
+  sw: 'Kwa Nini Dhambi Iliruhusiwa?' 
+},
+'step1.desc': { 
+  en: 'Understanding God’s character, freedom, and the origin of evil.', 
+  sw: 'Kuelewa tabia ya Mungu, uhuru wa kuchagua, na asili ya uovu.' 
+},
+
+'step2.title': { 
+  en: 'The Plan of Salvation', 
+  sw: 'Mpango wa Wokovu' 
+},
+'step2.desc': { 
+  en: 'God’s eternal plan to save humanity through Jesus Christ.', 
+  sw: 'Mpango wa milele wa Mungu wa kumwokoa mwanadamu kupitia Yesu Kristo.' 
+},
+
+'step3.title': { 
+  en: 'The Three Angels’ Messages', 
+  sw: 'Ujumbe wa Malaika Watatu' 
+},
+'step3.desc': { 
+  en: 'Heaven’s final message calling the world back to God.', 
+  sw: 'Ujumbe wa mwisho wa mbinguni unaouita ulimwengu urejee kwa Mungu.' 
+},
+
+'step4.title': { 
+  en: 'As It Was in the Days of Noah', 
+  sw: 'Kama Ilivyokuwa Siku za Nuhu' 
+},
+'step4.desc': { 
+  en: 'A warning from history repeating in the last days.', 
+  sw: 'Onyo kutoka historia inayojirudia katika siku za mwisho.' 
+},
+
+'step5.title': { 
+  en: 'The New Heaven and New Earth', 
+  sw: 'Mbingu Mpya na Nchi Mpya' 
+},
+'step5.desc': { 
+  en: 'God’s promise of eternal life in a restored world.', 
+  sw: 'Ahadi ya Mungu ya uzima wa milele katika ulimwengu uliorejeshwa.' 
+},
+
   
 
   // Featured Teaching
