@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Scale, AlertCircle, Cross, Sun, ArrowRight, CheckCircle } from 'lucide-react';
+import { Heart, Scale, AlertCircle, Cross, Sun, ArrowRight, CheckCircle, UserCircle, User2, BookAIcon } from 'lucide-react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -16,6 +16,8 @@ const Journey: React.FC = () => {
     AlertCircle,
     Cross,
     Sun,
+    User2,
+    BookAIcon
   };
 
   return (
@@ -74,7 +76,7 @@ const Journey: React.FC = () => {
 
                         {/* Scripture */}
                         <blockquote className="scripture-quote mb-6">
-                          {step.verse}
+                          {language === 'en' ? step.verse : step.versesw}
                         </blockquote>
 
                         {/* Topics */}

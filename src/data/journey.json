@@ -28,33 +28,31 @@
     "icon": "Scale",
     "title": "The Plan of Salvation",
     "titleSw": "Mpango Wa Ukombozi",
-    "subtitle": "A Reflection of His Character",
-    "subtitleSw": "Onyesho la Tabia Yake",
-    "description": "God's law is not a set of arbitrary rules but a perfect reflection of His character. The law is founded on love—love for God and love for others. Understanding this transforms how we see obedience.",
-    "descriptionSw": "Sheria ya Mungu si sheria za kiholela bali ni onyesho kamili la tabia yake. Sheria imejengwa juu ya upendo—upendo kwa Mungu na upendo kwa wengine. Kuelewa hili kunabadilisha jinsi tunavyoona utii.",
-    "verse": "\"Love is the fulfillment of the law.\" — Romans 13:10",
+    "verse": "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life. John 3:16",
+    "versesw": "Kwa maana jinsi hii Mungu aliupenda ulimwengu, hata akamtoa Mwanawe pekee, ili kila mtu amwaminiye asipotee, bali awe na uzima wa milele. Yoh 3:16",
     "topics": [
-      "The Two Great Commandments",
-      "Law and Love",
-      "The Ten Commandments",
-      "Spirit of the Law"
+      "One Possible Way Of Salvation",
+      "God's Unchangeable Law",
+      "View of the Future",
+      "The Sacrificial Offering"
     ],
     "topicsSw": [
-      "Amri Mbili Kuu",
-      "Sheria na Upendo",
-      "Amri Kumi",
-      "Roho ya Sheria"
+      "Njia Moja Pekee Inayowezekana ya Wokovu",
+      "Sheria ya Mungu Isiyobadilika",
+      "Maono ya Baadaye",
+      "Sadaka ya Dhabihu"
     ],
     "color": "sage"
   },
   {
     "number": 3,
-    "icon": "AlertCircle",
+    "icon": "User2",
     "title": "Three Angel's Message",
     "titleSw": "Ujumbe Wa Malaika Watatu",
     "subtitle": "A message for the last days",
     "subtitleSw": "Ujumbe wa Siku za Mwisho",
     "verse": "\"He said in a loud voice, “Fear God and give him glory, because the hour of his judgment has come. Worship him who made the heavens, the earth, the sea and the springs of water.”.\" — Revelation 14:7",
+    "versesw": "\"Akasema kwa sauti kuu, Mcheni Mungu, na kumtukuza, kwa maana saa ya hukumu yake imekuja. Msujudieni yeye aliyezifanya mbingu na nchi na bahari na chemchemi za maji.”.\" — Ufunuo 14:7",
     "topics": [
       "The First Angel's Message",
       "The Second Angel's Message",
@@ -62,34 +60,32 @@
     ],
      
     "topicsSw": [
-      "Dhambi ni Nini?",
-      "Asili ya Dhambi",
-      "Matokeo ya Dhambi",
-      "Haja ya Mwokozi"
+      "Ujumbe wa Malaika wa Kwanza",
+      "Ujumbe wa Malaika wa pili",
+      "Ujumbe wa Malaika wa Tatu"
     ],
     "color": "burgundy"
   },
   {
     "number": 4,
-    "icon": "Cross",
-    "title": "Justice and Judgment",
-    "titleSw": "Haki Na Hukumu",
-    "subtitle": "Justice and Mercy United",
-    "subtitleSw": "Haki na Rehema Zimeungana",
-    "description": "In Jesus Christ, we see the perfect revelation of God's character. The cross demonstrates both God's justice (the law must be upheld) and His mercy (He provides the way of salvation).",
-    "descriptionSw": "Katika Yesu Kristo, tunaona ufunuo kamili wa tabia ya Mungu. Msalaba unaonyesha haki ya Mungu (sheria lazima iheshimiwe) na rehema yake (anatoa njia ya wokovu).",
-    "verse": "\"For God so loved the world that He gave His only begotten Son.\" — John 3:16",
+    "icon": "BookAIcon",
+    "title": "History Repeats: Noah’s Day",
+    "titleSw": "Historia Inajirudia: Siku za Nuhu",
+    "verse": "Matthew 24:37-39.But as the days of Noah were, so shall also the coming of the Son of man be. For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark, And knew not until the flood came, and took them all away; so shall also the coming of the Son of man be. ",
+    "versesw": "Mathayo 24:37-39 Kwa maana kama vile ilivyokuwa siku za Nuhu, ndivyo kutakavyokuwa kuja kwake Mwana wa Adamu. Kwa kuwa kama vile katika siku zile zilizotangulia gharika walivyokuwa wakila na kunywa, wakioa na kuolewa, hata siku ile aliyoingia Nuhu katika safina, wasijue hata gharika ikaja, ikawachukua wote, ndivyo kutakavyokuwa kuja kwake Mwana wa Adamu",
     "topics": [
-      "The Gospel",
-      "The Cross Explained",
-      "Justification by Faith",
-      "The New Covenant"
+      "History Repeats: Noah’s Day",
+      "The Build of the Ark",
+      "The Animals Enter the Ark",
+      "The Storm Breaks",
+      "Noah’s Sacrifice and God’s Promise"
     ],
     "topicsSw": [
-      "Injili",
-      "Msalaba Umefafanuliwa",
-      "Kuhesabiwa Haki kwa Imani",
-      "Agano Jipya"
+      "Historia Inajirudia: Siku za Nuhu",
+      "Kujenga Safina",
+      "Wanyama Kuingia Katika Safina",
+      "Dhoruba Inaanza",
+      "Dhabihu ya Nuhu na Ahadi ya Mungu"
     ],
     "color": "gold"
   },

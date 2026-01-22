@@ -123,7 +123,7 @@ const translations: Record<string, Record<Language, string>> = {
     sw: 'Kuwaongoza waamini katika ujuzi wa kina, wa kibinafsi wa Mungu kupitia uongozi unaomlenga Kristo.'
   },
   'footer.quickLinks': { en: 'Quick Links', sw: 'Viungo vya Haraka' },
-  'footer.connect': { en: 'Join Groups and Platform', sw: 'Jiunge na Makundi na Jukwaa' },
+  'footer.connect': { en: 'Join Groups and Platform', sw: 'Jiunge na Makundi na Jukwaa                                                                                                                                                             ' },
   'footer.rights': { en: 'All rights reserved.', sw: 'Haki zote zimehifadhiwa.' },
 };
 
