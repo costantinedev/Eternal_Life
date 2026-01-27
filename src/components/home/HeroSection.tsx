@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-10">
           {/* Main Title */}
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-cream leading-tight">
             {t('hero.title')}

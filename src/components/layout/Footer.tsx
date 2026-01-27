@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Heart, Computer, MessageCircle, Instagram, Facebook, Send } from 'lucide-react';
+import { Mail, Heart, Computer, MessageCircle, Instagram, Facebook, Send, ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer: React.FC = () => {
@@ -84,6 +84,15 @@ const Footer: React.FC = () => {
               >
                 <Facebook className="w-4 h-4" />
                 Facebook
+              </a>
+              <a
+                href="https://egwwritings.org/"
+                className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="w-4 h-4" />
+                EGW Writings
               </a>
             </div>
           </div>

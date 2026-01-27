@@ -45,8 +45,8 @@ const FeaturedTeaching: React.FC = () => {
               
               {/* Scripture Reference */}
               <blockquote className="scripture-quote">
-                "He who does not love does not know God, for God is love."
-                <footer className="mt-2 text-sm text-muted-foreground">— 1 John 4:8</footer>
+                “clouds and darkness are round about Him: righteousness and judgment are the foundation of His throne.” 
+                <footer className="mt-2 text-sm text-muted-foreground">— Psalm 97:2.</footer>
               </blockquote>
 
               <Button variant="default" size="lg" asChild>

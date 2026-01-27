@@ -19,13 +19,13 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.contact': { en: 'Contact', sw: 'Wasiliana' },
   
   // Hero Section
-  'hero.title': { en: 'Know the Only True God', sw: 'Mjue Mungu wa Kweli Pekee' },
+  'hero.title': { en: 'Eternal Life', sw: 'Uzima wa Milele' },
   'hero.subtitle': { 
     en: 'A Christ-centered mentorship journey into eternal life', 
     sw: 'Safari ya uongozi inayomlenga Kristo kwenye uzima wa milele' 
   },
   'hero.verse': {
-    en: '"This is eternal life: that they may know You, the only true God, and Jesus Christ whom You have sent."',
+    en: '"This is life eternal: that they might know thee the only true God, and Jesus Christ whom thou hast sent."',
     sw: '"Huu ndio uzima wa milele, wakujue Wewe, Mungu wa pekee wa kweli, na Yesu Kristo uliyemtuma."'
   },
   'hero.reference': { en: 'John 17:3', sw: 'Yohana 17:3' },
