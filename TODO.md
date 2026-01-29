@@ -1,6 +1,5 @@
-# Contact Us Section Implementation
+# TODO: Add Animating Stars Linked to Each Other in Hero Section
 
-- [ ] Create src/pages/Contact.tsx with contact form and information
-- [ ] Add contact translations to LanguageContext.tsx
-- [ ] Update Header.tsx navigation to include Contact link
-- [ ] Add /contact route to App.tsx
+- [x] Add SVG element with animating stars and connecting lines to HeroSection.tsx
+- [x] Update index.css with CSS animations for twinkling stars and drawing lines
+- [x] Test the animation to ensure it enhances the hero section without issues

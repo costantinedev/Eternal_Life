@@ -51,40 +51,41 @@ const Footer: React.FC = () => {
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:hello@john173.org"
+                href="mailto:eternallife.173@gmail.com"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
-                info@eternallife.org
+                eternallife.173@gmail.com
               </a>
+
               <a
-                href="https://wa.me/1234567890"
+                href="https://chat.whatsapp.com/HUZU6Ows7Z01zkq2RuW1BX"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp
               </a>
-              <a
+              {/* <a
                 href="https://instagram.com/eternallife"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Instagram className="w-4 h-4" />
                 Instagram
-              </a>
+              </a> */}
               <a
-                href="https://t.me/eternallife"
+                href="https://t.me/eternal_life173"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Send className="w-4 h-4" />
                 Telegram
               </a>
-              <a
+              {/* <a
                 href="https://facebook.com/eternallife"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"
               >
                 <Facebook className="w-4 h-4" />
                 Facebook
-              </a>
+              </a> */}
               <a
                 href="https://egwwritings.org/"
                 className="flex items-center gap-2 text-cream/80 hover:text-gold transition-colors text-sm"

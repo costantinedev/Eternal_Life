@@ -26,15 +26,15 @@ const Contact: React.FC = () => {
     try {
       // Send email using EmailJS
       await emailjs.send(
-        'YOUR_SERVICE_ID',   // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID',  // Replace with your EmailJS Template ID
+        'service_sm1hzo8',   // Replace with your EmailJS Service ID
+        'template_j3by34e',  // Replace with your EmailJS Template ID
         {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
-          to_email: 'costantine.dev@gmail.com',
+          to_email: 'eternallife.173@gmail.com',
         },
-        'YOUR_PUBLIC_KEY'    // Replace with your EmailJS Public Key
+        'dJMLIASyvy_S5XmV0'    // Replace with your EmailJS Public Key
       );
 
       // Show success toast
@@ -142,10 +142,10 @@ const Contact: React.FC = () => {
                 {language === 'en' ? 'Alternatively, you can reach us at:' : 'Vinginevyo, unaweza kutufikia hapa:'}
               </p>
               <a
-                href="mailto:costantine.dev@gmail.com"
+                href="mailto:eternal_life.173@gmail.com"
                 className="text-gold hover:underline mt-2 inline-block"
               >
-                costantine.dev@gmail.com
+                eternal_life.173@gmail.com
               </a>
             </div>
           </div>
