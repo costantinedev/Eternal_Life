@@ -14,10 +14,11 @@ import emailjs from '@emailjs/browser'; // npm install @emailjs/browser
 interface ContactFormData {
   name: string;
   email: string;
+  title: string;
   message: string;
 }
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const { language } = useLanguage();
   const { toast } = useToast();
   const form = useForm<ContactFormData>();
@@ -29,10 +30,10 @@ const Contact: React.FC = () => {
         'service_sm1hzo8',   // Replace with your EmailJS Service ID
         'template_j3by34e',  // Replace with your EmailJS Template ID
         {
-          from_name: data.name,
-          from_email: data.email,
+          name: data.name,
+          email: data.email,
+          title: data.title,
           message: data.message,
-          to_email: 'eternallife.173@gmail.com',
         },
         'dJMLIASyvy_S5XmV0'    // Replace with your EmailJS Public Key
       );
@@ -47,6 +48,7 @@ const Contact: React.FC = () => {
       });
 
       form.reset();
+      window.location.reload();
     } catch (error) {
       console.error(error);
       toast({
@@ -88,6 +90,7 @@ const Contact: React.FC = () => {
                 <FormField
                   control={form.control}
                   name="name"
+                  rules={{ required: language === 'en' ? 'Name is required' : 'Jina linahitajika' }}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>{language === 'en' ? 'Name' : 'Jina'}</FormLabel>
@@ -102,6 +105,13 @@ const Contact: React.FC = () => {
                 <FormField
                   control={form.control}
                   name="email"
+                  rules={{
+                    required: language === 'en' ? 'Email is required' : 'Barua pepe inahitajika',
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: language === 'en' ? 'Invalid email address' : 'Anwani ya barua pepe si sahihi'
+                    }
+                  }}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>{language === 'en' ? 'Email' : 'Barua Pepe'}</FormLabel>
@@ -115,7 +125,23 @@ const Contact: React.FC = () => {
 
                 <FormField
                   control={form.control}
+                  name="title"
+                  rules={{ required: language === 'en' ? 'Title is required' : 'Kichwa kinahitajika' }}
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{language === 'en' ? 'Title' : 'Kichwa'}</FormLabel>
+                      <FormControl>
+                        <Input placeholder={language === 'en' ? 'Subject or title' : 'Mada au kichwa'} {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
                   name="message"
+                  rules={{ required: language === 'en' ? 'Message is required' : 'Ujumbe unahitajika' }}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>{language === 'en' ? 'Message' : 'Ujumbe'}</FormLabel>
@@ -131,7 +157,7 @@ const Contact: React.FC = () => {
                   )}
                 />
 
-                <Button type="submit" className="w-full">
+                <Button type="button" onClick={form.handleSubmit(onSubmit)} className="w-full">
                   {language === 'en' ? 'Send Message' : 'Tuma Ujumbe'}
                 </Button>
               </form>
