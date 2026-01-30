@@ -30,7 +30,7 @@ const Teachings: React.FC = () => {
 
   const categories = [
     { id: 'all', label: language === 'en' ? 'All Teachings' : 'Mafundisho Yote', icon: BookOpen },
-    { id: 'character', label: language === 'en' ? "God's Character" : 'Tabia ya Mungu', icon: Heart },
+    { id: 'character', label: language === 'en' ? "Why Sin Was Permitted?" : 'Kwa nini dhambi Iliruhusiwa?', icon: Heart },
     { id: 'law', label: language === 'en' ? "Plan Of Salvation" : 'Sheria ya Mungu', icon: Scale },
     { id: 'message', label: language === 'en' ? "Three Angel's Message" : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
     { id: 'redemption', label: language === 'en' ? 'History Repeats: Noah’s Day' : 'Historia Inajirudia: Siku za Nuhu', icon: Cross },

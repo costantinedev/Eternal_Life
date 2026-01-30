@@ -32,7 +32,6 @@ const Contact = () => {
         {
           name: data.name,
           email: data.email,
-          title: data.title,
           message: data.message,
         },
         'dJMLIASyvy_S5XmV0'    // Replace with your EmailJS Public Key
@@ -117,21 +116,6 @@ const Contact = () => {
                       <FormLabel>{language === 'en' ? 'Email' : 'Barua Pepe'}</FormLabel>
                       <FormControl>
                         <Input type="email" placeholder={language === 'en' ? 'your.email@example.com' : 'barua@example.com'} {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="title"
-                  rules={{ required: language === 'en' ? 'Title is required' : 'Kichwa kinahitajika' }}
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>{language === 'en' ? 'Title' : 'Kichwa'}</FormLabel>
-                      <FormControl>
-                        <Input placeholder={language === 'en' ? 'Subject or title' : 'Mada au kichwa'} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

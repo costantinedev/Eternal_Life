@@ -77,9 +77,9 @@ const About: React.FC = () => {
             <blockquote className="font-serif text-2xl md:text-3xl italic text-charcoal mb-4 leading-relaxed">
               {language === 'en'
                 ? '"Now this is eternal life: that they know You, the only true God, and Jesus Christ, whom You have sent."'
-                : '"Huu ndio uzima wa milele: kumjua Wewe Mungu wa kweli peke yako, na Yesu Kristo uliyemtuma."'}
+                : '"Na uzima wa milele ndio huu, kumjua Wewe, Mungu wa pekee wa kweli, na Yesu Kristo uliyemtuma."'}
             </blockquote>
-            <p className="text-gold font-semibold mb-8">— John 17:3</p>
+            <p className="text-gold font-semibold mb-8">{language === 'en' ? '— John 17:3' : '-Yohana 17:3'}</p>
 
             <p className="text-charcoal-light mb-6">
               {language === 'en'

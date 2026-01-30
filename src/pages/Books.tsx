@@ -13,25 +13,60 @@ const Books: React.FC = () => {
   // List of PDFs available for download
   const pdfs = [
     {
-      id: 'sample',
-      title: language === 'en' ? 'Sample PDF' : 'Mfano wa PDF',
+      id: 'hatua za ukamilifu katika kristo',
+      title: language === 'en' ? 'Hatua za ukamilifu katika kristo' : 'Hatua za ukamilifu katika kristo',
       description: language === 'en'
-        ? 'A sample PDF file for demonstration purposes.'
-        : 'Faili ya mfano ya PDF kwa madhumuni ya onyesho.',
-      filename: 'costantine_cv.docx (3).pdf',
-      size: '1 KB',
-      lang: 'en'
+        ? 'hatua za ukamilifu katika kristo'
+        : 'hatua za ukamilifu katika kristo.',
+      filename: 'hatua za ukamilifu katika kristo.pdf',
+      lang: 'sw'
     },
     {
-      id: 'sample2',
-      title: language === 'en' ? 'Cover Letter PDF' : 'Barua ya Kufungua PDF',
+      id: 'kumjua yesu',
+      title: language === 'en' ? 'kumjua yesu' : 'kumjua yesu',
       description: language === 'en'
-        ? 'A sample cover letter PDF file.'
-        : 'Faili ya mfano ya barua ya kufungua PDF.',
-      filename: 'cover letter.pdf',
-      size: '1 KB',
+        ? 'kumjua yesu'
+        : 'kumjua yesu.',
+      filename: 'kumjua yesu.pdf',
       lang: 'sw'
-    }
+    },
+    {
+      id: 'Manabii Na Wafalme',
+      title: language === 'en' ? 'Manabii Na Wafalme' : 'Manabii Na Wafalme',
+      description: language === 'en'
+        ? 'Manabii Na Wafalme'
+        : 'Manabii Na Wafalme.',
+      filename: 'MNW(PK).pdf',
+      lang: 'sw'
+    },
+    {
+      id: 'Tumaini La Vizazi Vyote',
+      title: language === 'en' ? 'Tumaini La Vizazi Vyote' : 'Tumaini La Vizazi Vyote',
+      description: language === 'en'
+        ? 'Tumaini La Vizazi Vyote'
+        : 'Tumaini La Vizazi Vyote.',
+      filename: 'TVV(DA).pdf',
+      lang: 'sw'
+    },
+    {
+      id: 'Wazee Na Manabii',
+      title: language === 'en' ? 'Wazee Na Manabii' : 'Wazee Na Manabii',
+      description: language === 'en'
+        ? 'Wazee Na Manabii'
+        : 'Wazee Na Manabii.',
+      filename: 'WAZEE NA MANABII MASTER  PDF.pdf',
+      lang: 'sw'
+    },
+    {
+      id: 'Vita Kuu',
+      title: language === 'en' ? 'Vita Kuu' : 'Vita Kuu',
+      description: language === 'en'
+        ? 'Vita Kuu'
+        : 'Vita Kuu',
+      filename: 'sw_VK(GCCon).pdf',
+      lang: 'sw'
+    },
+
     // Add more PDFs here as they are added to public/pdfs/
   ];
 
@@ -70,17 +105,19 @@ const Books: React.FC = () => {
         <section className="py-16 bg-cream">
           <div className="container mx-auto px-4">
             {/* Language Filter */}
-            <div className="mb-8 flex justify-center">
-              <Select value={filterLanguage} onValueChange={setFilterLanguage}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Filter by language" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All</SelectItem>
-                  <SelectItem value="en">English</SelectItem>
-                  <SelectItem value="sw">Swahili</SelectItem>
-                </SelectContent>
-              </Select>
+            <div className="mb-8 flex justify-center gap-4">
+              {["all", "en", "sw"].map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => setFilterLanguage(lang)}
+                  className={`px-5 py-2 rounded-full font-medium transition-colors ${filterLanguage === lang
+                      ? "bg-yellow-500 text-white"
+                      : "bg-gray-200 text-gray-800 hover:bg-yellow-200"
+                    }`}
+                >
+                  {lang === "all" ? "All" : lang === "en" ? "English" : "Swahili"}
+                </button>
+              ))}
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -96,9 +133,7 @@ const Books: React.FC = () => {
                         <h3 className="font-serif text-xl font-semibold text-charcoal">
                           {pdf.title}
                         </h3>
-                        <p className="text-sm text-muted-foreground">
-                          {pdf.size}
-                        </p>
+
                       </div>
                     </div>
 
