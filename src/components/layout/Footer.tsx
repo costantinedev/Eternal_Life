@@ -13,15 +13,23 @@ const Footer: React.FC = () => {
           {/* Brand & Mission */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
-                <span className="text-primary-foreground font-serif text-xl font-bold">J</span>
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden border">
+                <img
+                  src="/logo.png"
+                  alt="John 17:3 Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <span className="font-serif text-xl font-semibold">John 17:3</span>
+
+
+              <span className="font-serif text-xl font-semibold">Eternal Life Ministry</span>
             </div>
+
             <p className="text-cream/80 text-sm leading-relaxed">
               {t('footer.mission')}
             </p>
           </div>
+
 
           {/* Quick Links */}
           <div>
@@ -32,14 +40,17 @@ const Footer: React.FC = () => {
               <Link to="/journey" className="text-cream/80 hover:text-gold transition-colors text-sm">
                 {t('nav.journey')}
               </Link>
-              <Link to="/know-god" className="text-cream/80 hover:text-gold transition-colors text-sm">
-                {t('nav.knowGod')}
+              <Link to="/books" className="text-cream/80 hover:text-gold transition-colors text-sm">
+                {t('nav.books')}
               </Link>
               <Link to="/teachings" className="text-cream/80 hover:text-gold transition-colors text-sm">
                 {t('nav.teachings')}
               </Link>
               <Link to="/about" className="text-cream/80 hover:text-gold transition-colors text-sm">
                 {t('nav.about')}
+              </Link>
+              <Link to="/contact" className="text-cream/80 hover:text-gold transition-colors text-sm">
+                {t('nav.contact')}
               </Link>
             </nav>
           </div>
@@ -106,7 +117,7 @@ const Footer: React.FC = () => {
               © {new Date().getFullYear()} Eternal Life {t('footer.rights')}
             </p>
             <p className="flex items-center gap-1 text-cream/60 text-sm">
-              Made with <Computer className="w-4 h-4 text-burgundy" /> Costantine .dev
+              Made with <Heart className="w-4 h-4 text-burgundy" /> eternal life ministry.
             </p>
           </div>
         </div>

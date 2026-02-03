@@ -16,9 +16,9 @@ const Header: React.FC = () => {
     // { path: '/know-god', label: t('nav.knowGod') },
     { path: '/teachings', label: t('nav.teachings') },
     { path: '/books', label: t('nav.books') },
-  { path: '/about', label: t('nav.about') },
-  { path: '/contact', label: t('nav.contact') },
-];
+    { path: '/about', label: t('nav.about') },
+    { path: '/contact', label: t('nav.contact') },
+  ];
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -32,13 +32,19 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
-              <span className="text-primary-foreground font-serif text-xl font-bold">J</span>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden bg-white">
+              <img
+                src="/logo.png"
+                alt="John 17:3 Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
+
             <span className="font-serif text-xl md:text-2xl font-semibold text-charcoal">
-              John 17:3
+              Eternal Life Ministry
             </span>
           </Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -46,11 +52,10 @@ const Header: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive(link.path)
+                className={`text-sm font-medium transition-colors duration-200 ${isActive(link.path)
                     ? 'text-gold border-b-2 border-gold'
                     : 'text-charcoal-light hover:text-gold'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -95,11 +100,10 @@ const Header: React.FC = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-base font-medium py-2 transition-colors duration-200 ${
-                    isActive(link.path)
+                  className={`text-base font-medium py-2 transition-colors duration-200 ${isActive(link.path)
                       ? 'text-gold'
                       : 'text-charcoal-light hover:text-gold'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </Link>

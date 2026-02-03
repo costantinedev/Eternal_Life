@@ -21,8 +21,8 @@ const translations: Record<string, Record<Language, string>> = {
   // Hero Section
   'hero.title': { en: 'Eternal Life', sw: 'Uzima wa Milele' },
   'hero.subtitle': { 
-    en: 'A Christ-centered mentorship journey into eternal life', 
-    sw: 'Safari ya uongozi inayomlenga Kristo kwenye uzima wa milele' 
+    en: 'To know God is not merely to know about Him, it is to experience His character personally and deeply.', 
+    sw: 'Kumjua Mungu si kujua tu mambo yake, ni kupitia tabia yake kibinafsi na kwa undani.' 
   },
   'hero.verse': {
     en: '"This is life eternal: that they might know thee the only true God, and Jesus Christ whom thou hast sent."',
@@ -89,7 +89,7 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Featured Teaching
   'featured.label': { en: 'Featured Teaching', sw: 'Fundisho Maalum' },
-  'featured.title': { en: 'The Character of God', sw: 'Tabia ya Mungu' },
+  'featured.title': { en: 'His nature, His law, is love', sw: 'Asili Yake, Sheria Yake, ni upendo' },
   'featured.desc': { 
     en: 'Understanding God\'s character is the foundation of knowing Him. His law is not arbitrary rules but a reflection of who He is—a God of love, justice, and mercy.', 
     sw: 'Kuelewa tabia ya Mungu ndiyo msingi wa kumjua. Sheria yake si sheria za kiholela bali ni onyesho la yeye ni nani—Mungu wa upendo, haki, na rehema.' 

@@ -58,8 +58,8 @@ const KnowGod: React.FC = () => {
               </h1>
               <p className="text-lg md:text-xl text-cream/80 mb-8">
                 {language === 'en'
-                  ? 'To know God is not merely to know about Him—it is to experience His character personally and deeply.'
-                  : 'Kumjua Mungu si kujua tu mambo yake—ni kupitia tabia yake kibinafsi na kwa undani.'}
+                  ? 'To know God is not merely to know about Him, it is to experience His character personally and deeply.'
+                  : 'Kumjua Mungu si kujua tu mambo yake, ni kupitia tabia yake kibinafsi na kwa undani.'}
               </p>
               <blockquote className="font-serif text-xl md:text-2xl italic text-gold-light">
                 {language === 'en'

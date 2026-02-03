@@ -6,6 +6,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const FeaturedTeaching: React.FC = () => {
   const { t } = useLanguage();
+  const { language } = useLanguage();
+  
 
   return (
     <section className="py-24 bg-sage-light">
@@ -19,9 +21,9 @@ const FeaturedTeaching: React.FC = () => {
                   <div className="text-center space-y-4 p-8">
                     <BookOpen className="w-16 h-16 text-gold mx-auto" />
                     <p className="font-serif text-2xl text-cream italic">
-                      "God is love"
+                      {language === 'en'? 'God is Love' : 'Mungu ni Upendo'}
                     </p>
-                    <p className="text-cream/70 text-sm">— 1 John 4:8</p>
+                    <p className="text-cream/70 text-sm">{language === 'en' ? '1 John 4:8':'1 Yohana 4:8'}</p>
                   </div>
                 </div>
                 {/* Decorative Elements */}
@@ -45,8 +47,10 @@ const FeaturedTeaching: React.FC = () => {
               
               {/* Scripture Reference */}
               <blockquote className="scripture-quote">
-                “clouds and darkness are round about Him: righteousness and judgment are the foundation of His throne.” 
-                <footer className="mt-2 text-sm text-muted-foreground">— Psalm 97:2.</footer>
+                {language === 'en'
+                    ? 'And we have known and believed the love that God hath to us. God is love; and he that dwelleth in love dwelleth in God, and God in him.'
+                    : 'Nasi tumelifahamu pendo alilo nalo Mungu kwetu sisi, na kuliamini. Mungu ni upendo; naye akaaye katika pendo, hukaa ndani ya Mungu, na Mungu hukaa ndani yake.'}
+                <footer className="mt-2 text-sm text-muted-foreground">— 1John 4:16.</footer>
               </blockquote>
 
               <Button variant="default" size="lg" asChild>

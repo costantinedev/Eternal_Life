@@ -6,6 +6,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const CTASection: React.FC = () => {
   const { t } = useLanguage();
+  const { language } = useLanguage();
 
   return (
     <section className="py-24 bg-charcoal relative overflow-hidden">
@@ -45,7 +46,7 @@ const CTASection: React.FC = () => {
           {/* Supporting Scripture */}
           <div className="pt-8">
             <p className="font-serif text-gold-light italic text-lg">
-              "Come to me, all who labor and are heavy laden, and I will give you rest."
+              {language === 'en'? 'Come to me, all who labor and are heavy laden, and I will give you rest.':'Njoni kwangu, ninyi nyote msumbukao na wenye kulemewa na mizigo, nami nitawapumzisha.'}
             </p>
             <p className="text-cream/50 text-sm mt-2">— Matthew 11:28</p>
           </div>

@@ -20,7 +20,13 @@ const TeachingDetail: React.FC = () => {
   const boldKeywords = (text: string) => {
     if (!settings.highlightKeywords) return text;
 
-    const keywords = ['God', 'Christ', 'Jesus', 'Holy Spirit', 'Bible', 'Scripture', 'Three Angle\'s Message', 'Redemption', 'Eternal Life','Mungu','Roho', 'Yesu','Ufunuo','Heaven','Father','Son'];
+    const keywords = ['God', 'Christ', 
+      'Jesus', 'Holy Spirit', 'Bible', 
+      'Scripture', 'Three Angle\'s Message',
+       'Redemption', 'Eternal Life', 'Mungu', 
+       'Roho', 'Yesu', 'Ufunuo', 'Heaven', 
+       'Father', 'Son','uasi wa sheria',
+      'the transgression of the law'];
     let boldedText = text;
     keywords.forEach(keyword => {
       const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
@@ -81,10 +87,10 @@ const TeachingDetail: React.FC = () => {
                 {language === 'en' ? teaching.title : teaching.titleSw}
               </h1>
 
-                       
-               <blockquote className="scripture-quote mb-6  text-white text-lg" >
+
+              <blockquote className="scripture-quote mb-6  text-white text-lg" >
                 {language === 'en' ? teaching.excerpt : teaching.excerptSw}
-               </blockquote>
+              </blockquote>
             </div>
           </div>
         </section>
@@ -103,20 +109,30 @@ const TeachingDetail: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Key Points */}
-                <div className="mb-12">
-                  <h2 className="font-serif text-3xl font-semibold text-charcoal mb-6">
-                    {language === 'en' ? 'Key Points' : 'Nukta Muhimu'}
-                  </h2>
-                  <ul className="space-y-4">
-                    {teachingDetail && teachingDetail.keyPoints[language === 'en' ? 'en' : 'sw'].map((point, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
-                        <p className={`text-charcoal-light leading-relaxed ${getFontSizeClass()} ${getFontStyleClass()}`} dangerouslySetInnerHTML={{ __html: boldKeywords(point) }} />
-                      </li>
-                    ))}
-                  </ul>
+                {/* WhatsApp Call-to-Action */}
+                <div className="mt-16 bg-gold/10 border border-gold/30 rounded-2xl p-8 text-center max-w-3xl mx-auto">
+                  <h3 className="font-serif text-2xl font-semibold text-charcoal mb-4">
+                    {language === 'en'
+                      ? 'Continue the Study Together'
+                      : 'Endelea Kujifunza Pamoja'}
+                  </h3>
+
+                  <p className={`text-charcoal-light mb-6 ${getFontSizeClass()} ${getFontStyleClass()}`}>
+                    {language === 'en'
+                      ? 'Join our Eternal Life Ministry WhatsApp group to grow deeper in Scripture, ask questions, and walk this journey of faith together.'
+                      : 'Jiunge na kikundi chetu cha WhatsApp cha Eternal Life Ministry, ili kukua zaidi katika Neno, kuuliza maswali, na kutembea safari ya imani pamoja.'}
+                  </p>
+
+                  <a
+                    href="https://chat.whatsapp.com/HUZU6Ows7Z01zkq2RuW1BX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 bg-gold text-white px-8 py-3 rounded-full font-medium hover:bg-gold/90 transition"
+                  >
+                    {language === 'en' ? 'Join Bible Study Group' : 'Jiunge na Kikundi cha Biblia'}
+                  </a>
                 </div>
+
 
                 {/* Navigation */}
                 <div className="flex flex-col sm:flex-row gap-4 mt-12 pt-8 border-t border-border">
