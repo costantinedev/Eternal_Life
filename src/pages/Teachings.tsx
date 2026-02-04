@@ -33,7 +33,7 @@ const Teachings: React.FC = () => {
     { id: 'character', label: language === 'en' ? "Why Sin Was Permitted?" : 'Kwa nini dhambi Iliruhusiwa?', icon: Heart },
     { id: 'law', label: language === 'en' ? "Plan Of Salvation" : 'Mpango wa Wokovu', icon: Scale },
     { id: 'message', label: language === 'en' ? "Three Angel's Message" : 'Ujumbe Wa Malaika Watatu', icon: AlertCircle },
-    { id: 'redemption', label: language === 'en' ? 'History Repeats: Noah’s Day' : 'Historia Inajirudia: Siku za Nuhu', icon: Cross },
+    { id: 'redemption', label: language === 'en' ? 'History Repeats: Noah’s Day and Destruction Of Jerusalem' : 'Historia Inajirudia: Siku za Nuhu na Kuharibiwa kwa Yerusalemu', icon: Cross },
     { id: 'new-earth', label: language === 'en' ? 'The New Earth' : 'Nchi Mpya', icon: Sun },
   ];
 

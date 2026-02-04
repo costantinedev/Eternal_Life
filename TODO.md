@@ -1,5 +1,8 @@
-# TODO: Add Animating Stars Linked to Each Other in Hero Section
+# TODO: Add Last Days Events Section
 
-- [x] Add SVG element with animating stars and connecting lines to HeroSection.tsx
-- [x] Update index.css with CSS animations for twinkling stars and drawing lines
-- [x] Test the animation to ensure it enhances the hero section without issues
+- [x] Add new teachings to teachings.json for Sunday Law, Seal of God, Mark of the Beast, Christ's Return
+- [x] Add detailed descriptions to teachingDetails.json for each new teaching
+- [x] Create LastDaysEvents.tsx component in components/home/
+- [x] Update Index.tsx to include LastDaysEvents component
+- [ ] Test the development server
+- [ ] Verify content accuracy and depth

@@ -295,6 +295,17 @@
     "step": 4,
     "readTime": "18 min"
   },
+   {
+    "id": "destruction-of-jerusalem",
+    "title": "Destruction Of Jerusalem",
+    "titleSw": "Kuharibiwa kwa Yerusalemu.",
+    "excerpt": " When life is going on in its unvarying round; when men are absorbed in pleasure, in business, in traffic, in money-making; when religious leaders are magnifying the world’s progress and enlightenment, and the people are lulled in a false security“",
+    "excerptSw": "Wakati maisha yanaendelea katika hali yake ya kawaida ya siku zote; wakati watu wamemezwa katika starehe, katika biashara, katika usafiri, katika utafutaji wa pesa; wakati viongozi wa dini wanahamasisha maendeleo na elimu ya dunia, na watu wakiwa wanabembelezwa na usalama bandia",
+    "category": "redemption",
+    "categorySw": "Ukombozi katika Kristo",
+    "step": 4,
+    "readTime": "18 min"
+  },
   {
     "id": "new-earth",
     "title": "The New Earth",
@@ -306,7 +317,7 @@
     "step": 5,
     "readTime": "16 min"
   },
-   {
+  {
     "id": "new-jerusalem",
     "title": "The New Jerusalem",
     "titleSw": "Yerusalemu Mpya",
@@ -316,5 +327,49 @@
     "categorySw": "Yerusalemu Mpya",
     "step": 5,
     "readTime": "16 min"
+  },
+  {
+    "id": "sunday-law",
+    "title": "The Sunday Law",
+    "titleSw": "Sheria ya Jumapili",
+    "excerpt": "The enforcement of Sunday observance as a test of loyalty to civil authority, leading to persecution of Sabbath keepers.",
+    "excerptSw": "Utekelezaji wa kushika Jumapili kama jaribio la uaminifu kwa mamlaka ya kiserikali, unaosababisha mateso kwa wanaoshika Sabato.",
+    "category": "last-days",
+    "categorySw": "Matukio ya Siku za Mwisho",
+    "step": 6,
+    "readTime": "20 min"
+  },
+  {
+    "id": "seal-of-god",
+    "title": "The Seal of God",
+    "titleSw": "Muhuri wa Mungu",
+    "excerpt": "The mark of divine approval placed on those who keep God's commandments and have faith in Jesus.",
+    "excerptSw": "Alama ya kibali cha kimungu iliyowekwa juu ya wale wanaoshika amri za Mungu na kuwa na imani katika Yesu.",
+    "category": "last-days",
+    "categorySw": "Matukio ya Siku za Mwisho",
+    "step": 6,
+    "readTime": "18 min"
+  },
+  {
+    "id": "mark-of-the-beast",
+    "title": "The Mark of the Beast",
+    "titleSw": "Chapa ya Mnyama",
+    "excerpt": "The mark of allegiance to worldly powers opposing God's authority, received by those who reject His Sabbath.",
+    "excerptSw": "Alama ya utii kwa mamlaka ya kidunia inayopingana na mamlaka ya Mungu, inayopokelewa na wale wanaokataa Sabato Yake.",
+    "category": "last-days",
+    "categorySw": "Matukio ya Siku za Mwisho",
+    "step": 6,
+    "readTime": "22 min"
+  },
+  {
+    "id": "christ-return",
+    "title": "Christ's Glorious Return",
+    "titleSw": "Kurudi kwa Utukufu kwa Kristo",
+    "excerpt": "The triumphant second coming of Jesus Christ to deliver His faithful and establish eternal righteousness.",
+    "excerptSw": "Kuja kwa ushindi kwa mara ya pili kwa Yesu Kristo ili kuwaokoa waaminifu Wake na kuanzisha haki ya milele.",
+    "category": "last-days",
+    "categorySw": "Matukio ya Siku za Mwisho",
+    "step": 6,
+    "readTime": "25 min"
   }
 ]

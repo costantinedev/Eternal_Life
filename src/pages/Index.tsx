@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import JourneyPreview from '@/components/home/JourneyPreview';
 import FeaturedTeaching from '@/components/home/FeaturedTeaching';
+import LastDaysEvents from '@/components/home/LastDaysEvents';
 import CTASection from '@/components/home/CTASection';
 
 const Index: React.FC = () => {
@@ -14,6 +15,7 @@ const Index: React.FC = () => {
         <HeroSection />
         <JourneyPreview />
         <FeaturedTeaching />
+        <LastDaysEvents />
         <CTASection />
       </main>
       <Footer />
