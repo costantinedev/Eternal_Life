@@ -26,7 +26,11 @@ const TeachingDetail: React.FC = () => {
        'Redemption', 'Eternal Life', 'Mungu', 
        'Roho', 'Yesu', 'Ufunuo', 'Heaven', 
        'Father', 'Son','uasi wa sheria',
-      'the transgression of the law'];
+      'the transgression of the law',
+    'The Seventh Plague and the Special Resurrection',
+    'God Announces the Time of Christ’s Coming',
+    
+    ];
     let boldedText = text;
     keywords.forEach(keyword => {
       const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
